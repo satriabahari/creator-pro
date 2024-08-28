@@ -16,7 +16,7 @@ const Container = ({
   return (
     <div
       className={cn(
-        " px-16 py-8",
+        "py-8",
 
         className,
       )}
