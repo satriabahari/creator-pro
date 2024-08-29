@@ -1,6 +1,6 @@
 import React from "react";
-import MenuItem from "./MenuItem";
 import MENU_ITEMS from "@/common/constants/menu";
+import MenuItem from "./MenuItem";
 
 const MenuItemList = () => {
   const filteredMenus = MENU_ITEMS.filter((menu) => menu.isShow);

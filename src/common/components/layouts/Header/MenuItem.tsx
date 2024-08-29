@@ -1,6 +1,5 @@
 import { MenuItemProps } from "@/common/types/menu";
 import Link from "next/link";
-import React from "react";
 
 const MenuItem = ({ title, href }: MenuItemProps) => {
   return (

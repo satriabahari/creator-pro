@@ -1,20 +1,37 @@
-import Footer from "./Footer";
-import Header from "./Header";
+"use client";
+
+import { usePathname } from "next/navigation";
+import Footer from "./footer";
+import Header from "./header";
+import Sidebar from "./dashboard/sidebar";
+import HeaderDashboard from "./dashboard/header";
 
 interface LayoutsProps {
   children: React.ReactNode;
 }
 
-const Layouts = ({children}: LayoutsProps) => {
+const Layouts = ({ children }: LayoutsProps) => {
+  const pathname = usePathname();
+  const isDashboard = pathname === "/dashboard";
   return (
-    <div className="bg-neutral-50 px-16 py-4">
-      <Header/>
-      <main >
-        {children}
-      </main>
-      <Footer/>
+    <div className="bg-neutral-50">
+      {!isDashboard ? (
+        <div className="px-16 py-4">
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </div>
+      ) : (
+        <div className="flex h-full min-h-screen gap-4 p-4">
+          <Sidebar />
+          <div className="flex flex-col gap-4 w-full">
+            <HeaderDashboard />
+            <main>{children}</main>
+          </div>
+        </div>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default Layouts
+export default Layouts;

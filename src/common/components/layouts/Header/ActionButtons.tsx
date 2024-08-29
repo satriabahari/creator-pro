@@ -1,7 +1,7 @@
 import Button from "../../elements/Button";
 
-import ThemeSwitcher from "./ThemeSwitcher";
-import LocaleSwitcher from "./LocaleSwitcher";
+import ThemeSwitcher from "../../elements/ThemeSwitcher";
+import LocaleSwitcher from "../../elements/LocaleSwitcher";
 
 const ActionButtons = () => {
   return (
