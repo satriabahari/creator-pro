@@ -2,11 +2,10 @@ import React from "react";
 import TitleHero from "./TitleHero";
 import SosmedList from "./SosmedList";
 import ImageHero from "./ImageHero";
-import Value from "../value";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center gap-6">
+    <section className="flex flex-col items-center gap-6">
       <TitleHero />
       <SosmedList />
       <button className="rounded-full bg-neutral-800 px-4 py-2">
@@ -18,7 +17,7 @@ const Hero = () => {
       <div className="mt-20">
         <ImageHero />
       </div>
-    </div>
+    </section>
   );
 };
 

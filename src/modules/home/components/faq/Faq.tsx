@@ -3,7 +3,7 @@ import FaqList from "./FaqList";
 
 const Faq = () => {
   return (
-    <div className="px-28">
+    <section className="px-28">
       <div className="space-y-10 rounded-2xl bg-neutral-200 p-16">
         <div className="space-y-4 text-center">
           <h2 className="space-y-2 text-4xl font-semibold">
@@ -17,7 +17,7 @@ const Faq = () => {
         <FaqList />
         <p className="text-sm text-center">More Question? Contact us</p>
       </div>
-    </div>
+    </section>
   );
 };
 

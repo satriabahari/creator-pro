@@ -1,6 +1,6 @@
 import BLOG_ITEMS from '@/common/constants/blog'
 import React from 'react'
-import BlogCard from './BlogCard'
+import BlogCard from '../../../../common/components/elements/BlogCard'
 
 const BlogList = () => {
   return (

@@ -3,10 +3,10 @@ import BlogList from "./BlogList";
 
 const Blog = () => {
   return (
-    <div className="space-y-10">
+    <section className="space-y-10">
       <h2 className="text-center text-4xl font-semibold">Content Creator Blog</h2>
       <BlogList />
-    </div>
+    </section>
   );
 };
 
