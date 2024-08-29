@@ -10,6 +10,7 @@ const BLOG_ITEMS: BlogProps[] = [
     imageProfile: "/images/profile1.png",
     name: "John Doe",
     date: "2024-08-25",
+    isShow: true,
   },
   {
     title: "The Rise of TypeScript",
@@ -20,6 +21,7 @@ const BLOG_ITEMS: BlogProps[] = [
     imageProfile: "/images/profile2.png",
     name: "Jane Smith",
     date: "2024-08-20",
+    isShow: true,
   },
   {
     title: "Next.js for Beginners",
@@ -30,6 +32,40 @@ const BLOG_ITEMS: BlogProps[] = [
     imageProfile: "/images/profile3.png",
     name: "Alice Johnson",
     date: "2024-08-15",
+    isShow: true,
+  },
+  {
+    title: "Next.js for Beginners",
+    description:
+      "An introductory guide to building web applications using Next.js.",
+    image: "/images/nextjs.png",
+    category: "Web Development",
+    imageProfile: "/images/profile3.png",
+    name: "Alice Johnson",
+    date: "2024-08-15",
+    isShow: true,
+  },
+  {
+    title: "Next.js for Beginners",
+    description:
+      "An introductory guide to building web applications using Next.js.",
+    image: "/images/nextjs.png",
+    category: "Web Development",
+    imageProfile: "/images/profile3.png",
+    name: "Alice Johnson",
+    date: "2024-08-15",
+    isShow: true,
+  },
+  {
+    title: "Next.js for Beginners",
+    description:
+      "An introductory guide to building web applications using Next.js.",
+    image: "/images/nextjs.png",
+    category: "Web Development",
+    imageProfile: "/images/profile3.png",
+    name: "Alice Johnson",
+    date: "2024-08-15",
+    isShow: true,
   },
 ];
 
