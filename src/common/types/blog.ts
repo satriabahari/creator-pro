@@ -6,4 +6,5 @@ export interface BlogProps {
   imageProfile: string;
   name: string;
   date?: string;
+  isShow?: boolean;
 }
