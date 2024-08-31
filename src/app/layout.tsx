@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Layouts from "@/common/components/layouts";
+import { ThemeProvider } from "next-themes";
+import NextTopLoader from "nextjs-toploader";
 
 const inter = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -18,7 +20,20 @@ const RootLayout = async ({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Layouts>{children}</Layouts>
+        <NextTopLoader
+          color="#05b6d3"
+          initialPosition={0.08}
+          crawlSpeed={200}
+          height={3}
+          crawl={true}
+          // showSpinner={true}
+          easing="ease"
+          speed={200}
+          shadow="0 0 10px #05b6d3,0 0 5px #45c6c0"
+        />
+        <ThemeProvider>
+          <Layouts>{children}</Layouts>
+        </ThemeProvider>
       </body>
     </html>
   );
