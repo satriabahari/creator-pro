@@ -1,9 +1,10 @@
+import SectionHeading from "@/common/components/elements/SectionHeading";
 import ValueList from "./ValueList";
 
 const Value = () => {
   return (
-    <section className="space-y-10 px-16">
-      <h2 className="text-4xl font-semibold text-center">Value us</h2>
+    <section className="space-y-10 px-8">
+      <SectionHeading title="Value us" />
       <ValueList />
     </section>
   );

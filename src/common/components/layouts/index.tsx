@@ -14,9 +14,9 @@ const Layouts = ({ children }: LayoutsProps) => {
   const pathname = usePathname();
   const isDashboard = pathname === "/dashboard";
   return (
-    <div className="bg-neutral-50">
+    <>
       {!isDashboard ? (
-        <div className="px-16 py-4">
+        <div className="px-16 pb-4">
           <Header />
           <main>{children}</main>
           <Footer />
@@ -24,13 +24,13 @@ const Layouts = ({ children }: LayoutsProps) => {
       ) : (
         <div className="flex h-full min-h-screen gap-4 p-4">
           <Sidebar />
-          <div className="flex flex-col gap-4 w-full">
+          <div className="flex w-full flex-col gap-4">
             <HeaderDashboard />
             <main>{children}</main>
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

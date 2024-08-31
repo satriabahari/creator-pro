@@ -3,7 +3,10 @@ import Link from "next/link";
 
 const MenuItem = ({ title, href }: MenuItemProps) => {
   return (
-    <Link href={href} className="text-sm font-medium hover:text-purple-600 text-neutral-600">
+    <Link
+      href={href}
+      className="dark:text-neutral-500n text-sm font-medium text-neutral-600 dark:hover:text-neutral-300"
+    >
       {title}
     </Link>
   );

@@ -5,9 +5,17 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
 
 const Button = ({ children, className = "", ...others }: ButtonProps) => {
   return (
-    <button className={cn("rounded-lg px-4 py-2 bg-neutral-300 flex gap-2 items-center", className)} {...others}>
-      {children}
-    </button>
+    <div className="rounded-lg bg-gradient-to-br p-0.5 dark:from-purple-500 dark:via-pink-500 dark:to-yellow-500">
+      <button
+        className={cn(
+          "flex items-center gap-2 rounded-lg bg-neutral-300 bg-gradient-to-b px-4 py-2 dark:from-neutral-800 dark:to-neutral-900",
+          className,
+        )}
+        {...others}
+      >
+        {children}
+      </button>
+    </div>
   );
 };
 

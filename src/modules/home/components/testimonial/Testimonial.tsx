@@ -1,12 +1,11 @@
 import React from "react";
 import TestimonialList from "./TestimonialList";
+import SectionHeading from "@/common/components/elements/SectionHeading";
 
 const Testimonial = () => {
   return (
     <section className="space-y-10">
-      <h2 className="text-center text-4xl font-semibold">
-        What Are People Say
-      </h2>
+      <SectionHeading title="What Are People Say" />
       <TestimonialList />
     </section>
   );

@@ -7,7 +7,7 @@ import React from "react";
 const SosmedItem = ({ title, icon, className }: SosmedItemProps) => {
   return (
     <Tooltip title={title}>
-      <div className={cn("rounded-full bg-neutral-300 p-2.5", className)}>
+      <div className={cn("rounded-full bg-neutral-300 p-2.5 hover:scale-[1.2] transition duration-300", className)}>
         {icon}
       </div>
     </Tooltip>

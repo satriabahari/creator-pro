@@ -7,7 +7,7 @@ import { FaPlus } from "react-icons/fa";
 const FaqCard = ({ question, answer }: FaqProps) => {
   const [isShow, setIsShow] = useState(false);
   return (
-    <div className="flex flex-col gap-4 rounded-2xl bg-neutral-300 p-6">
+    <div className="flex flex-col gap-4 rounded-2xl bg-neutral-300 bg-gradient-to-b p-6 dark:from-neutral-700 dark:to-neutral-800">
       <div className="flex items-center justify-between">
         <p className="font-medium">{question}</p>
         <button onClick={() => setIsShow(!isShow)}>

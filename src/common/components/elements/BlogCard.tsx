@@ -13,26 +13,36 @@ const BlogCard = ({
   date,
 }: BlogProps) => {
   return (
-    <div className="bg-neutral-200 rounded-2xl p-4 space-y-2">
-      <Image src={"/images/hero.jpg"} width={300} height={200} alt={title} className="rounded-lg"/>
-      <div className="bg-neutral-300 rounded-full w-fit py-1 px-4 text-sm">{category}</div>
-      <div className="space-y-6">
-        <div className="space-y-1">
-          <h3 className="text-lg font-medium">{title}</h3>
-          <p className="text-sm">{description}</p>
+    <div className="rounded-2xl bg-gradient-to-br p-0.5 dark:from-purple-500 dark:via-pink-500 dark:to-yellow-500">
+      <div className="space-y-3 rounded-2xl h-full bg-neutral-200 p-4 dark:from-neutral-800 dark:to-neutral-900 bg-gradient-to-b">
+        <Image
+          src={"/images/hero.jpg"}
+          width={300}
+          height={200}
+          alt={title}
+          className="rounded-lg w-full"
+        />
+        <div className="w-fit rounded-full bg-neutral-300 px-4 py-1 text-sm dark:bg-neutral-700 text-neutral-100">
+          {category}
         </div>
-        <div className="flex flex-col gap-2">
-          <div className="flex gap-2">
-            <Image
-              src={"/images/hero.jpg"}
-              className="rounded-full"
-              width={24}
-              height={24}
-              alt={name}
-            />
-            <p className="text-sm">{name}</p>
+        <div className="space-y-6">
+          <div className="space-y-1">
+            <h3 className="text-lg font-medium dark:text-neutral-300">{title}</h3>
+            <p className="text-sm dark:text-neutral-500">{description}</p>
           </div>
-          <span className="text-sm">Jul 07, 2024 | 10 min</span>
+          <div className="flex flex-col gap-2">
+            <div className="flex gap-2">
+              <Image
+                src={"/images/hero.jpg"}
+                className="rounded-full"
+                width={24}
+                height={24}
+                alt={name}
+              />
+              <p className="text-sm dark:text-neutral-300">{name}</p>
+            </div>
+            <span className="text-sm dark:text-neutral-500">Jul 07, 2024 | 10 min</span>
+          </div>
         </div>
       </div>
     </div>

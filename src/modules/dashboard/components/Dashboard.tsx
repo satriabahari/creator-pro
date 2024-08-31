@@ -4,6 +4,7 @@ import TaskListCard from "./TaskListCard";
 import FollowerListCard from "./FollowerListCard";
 import VisitListCard from "./VisitListCard";
 import SocialMediaStats from "./SocialMediaStats";
+import Integration from "./Integration";
 
 const Dashboard = () => {
   return (
@@ -16,7 +17,7 @@ const Dashboard = () => {
       </div>
       <div className="grid grid-cols-3 gap-4">
         <SocialMediaStats />
-        <FollowerListCard />
+        <Integration />
       </div>
     </div>
   );
