@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Layouts from "@/common/components/layouts";
-import { ThemeProvider } from "next-themes";
+// import { ThemeProvider } from "next-themes";
 import NextTopLoader from "nextjs-toploader";
+import { ThemeProvider } from "@/stores/theme";
 
 const inter = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -18,7 +19,7 @@ const RootLayout = async ({
   children: React.ReactNode;
 }>) => {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <NextTopLoader
           color="#05b6d3"
