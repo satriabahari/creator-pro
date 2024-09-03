@@ -6,7 +6,7 @@ interface ValueCardProps {
 
 const ValueCard = ({ icon, title, description }: ValueCardProps) => {
   return (
-    <div className="rounded-2xl bg-gradient-to-br p-0.5 dark:from-purple-500 dark:via-pink-500 dark:to-yellow-500">
+    <div className="rounded-2xl bg-gradient-to-br p-0.5 dark:from-purple-500 dark:via-pink-500 dark:to-yellow-500 hover:scale-105 duration-300 transition">
       <div className="flex flex-col gap-5 rounded-2xl bg-neutral-200 bg-gradient-to-b p-8 dark:from-neutral-800 dark:to-neutral-900">
         <div className="w-fit rounded-lg bg-neutral-400 bg-gradient-to-br p-2 dark:from-purple-500 dark:via-pink-500 dark:to-yellow-500">
           {icon}

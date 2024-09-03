@@ -8,7 +8,7 @@ import CallToAction from "./cta/CallToAction";
 
 const Home = () => {
   return (
-    <div className="flex flex-col gap-[200px]">
+    <div className="flex flex-col gap-[100px]">
       <Hero />
       <Value />
       <Features/>

@@ -14,7 +14,7 @@ const CallToAction = () => {
       </div>
       <p className="w-1/3 dark:text-neutral-500 text-sm">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fuga
-        pariatur?
+        pariaturunr?
       </p>
       <button className="dark:bg-neutral-100 dark:text-neutral-700 px-4 py-2 rounded-lg">Try To Free</button>
       <Image src="/images/hero.jpg" width={500} height={150} alt="hero" className="rounded-xl"/>
