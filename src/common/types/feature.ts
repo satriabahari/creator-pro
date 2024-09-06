@@ -3,5 +3,6 @@ export interface FeatureProps {
   description: string;
   image: string;
   positionGrid?: string;
+  aosType?: string;
   isShow?: boolean;
 }

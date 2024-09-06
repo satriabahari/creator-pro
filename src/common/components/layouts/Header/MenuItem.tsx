@@ -5,7 +5,7 @@ const MenuItem = ({ title, href }: MenuItemProps) => {
   return (
     <Link
       href={href}
-      className="dark:text-neutral-500n text-sm font-medium text-neutral-600 dark:hover:text-neutral-300"
+      className="dark:text-neutral-500n text-sm font-medium text-neutral-500 dark:hover:text-neutral-300"
     >
       {title}
     </Link>

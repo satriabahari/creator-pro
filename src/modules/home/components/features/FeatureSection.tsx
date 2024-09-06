@@ -1,3 +1,4 @@
+import SubContainer from "@/common/components/elements/SubContainer";
 import cn from "@/common/libs/clsxm";
 import { FeatureProps } from "@/common/types/feature";
 import Image from "next/image";
@@ -8,9 +9,10 @@ const FeatureSection = ({
   description,
   image,
   positionGrid,
+  aosType,
 }: FeatureProps) => {
   return (
-    <div className="grid grid-cols-2 gap-16 items-center">
+    <SubContainer className="grid grid-cols-2 gap-16 items-center" data-aos={aosType}>
       <div className="space-y-4">
         <h3 className="text-3xl font-semibold leading-tight dark:text-neutral-300 w-3/4">{title}</h3>
         <p className="dark:text-neutral-400">{description}</p>
@@ -31,7 +33,7 @@ const FeatureSection = ({
           />
         </div>
       </div>
-    </div>
+    </SubContainer>
   );
 };
 

@@ -3,7 +3,7 @@ import React from "react";
 const TitleHero = () => {
   return (
     <div className="flex flex-col items-center space-y-5 text-center">
-      <h1 className="text-6xl font-bold text-neutral-800 dark:text-neutral-300">
+      <h1 className="text-6xl font-bold text-neutral-800 dark:text-neutral-300 leading-tight">
         Creatos, Lunch your <br />
         <span className="bg-gradient-to-r from-blue-600 via-fuchsia-500 to-rose-700 bg-clip-text text-transparent dark:from-purple-500 dark:via-pink-500 dark:to-yellow-500">
           knowledge business

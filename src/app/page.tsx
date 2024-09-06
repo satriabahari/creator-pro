@@ -3,7 +3,7 @@ import Home from "@/modules/home";
 
 const HomePage = () => {
   return (
-    <Container backgroundGradient={true} className="pt-28 min-h-screen px-16">
+    <Container backgroundGradient={true} className="pt-36 min-h-screen ">
       <Home />
     </Container>
   );

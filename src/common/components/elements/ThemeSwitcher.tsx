@@ -14,21 +14,19 @@ const ThemeSwitcher = ({ className }: ThemeSwitcherProps) => {
   };
 
   return (
-    <div className="rounded-lg bg-gradient-to-br p-0.5 transition duration-300 hover:scale-110 active:scale-90 dark:from-purple-500 dark:via-pink-500 dark:to-yellow-500">
-      <button
-        className={cn(
-          "rounded-lg bg-gradient-to-b p-3 dark:from-neutral-800 dark:to-neutral-900 dark:text-neutral-50",
-          className,
-        )}
-        onClick={toggleTheme}
-      >
-        {resolvedTheme === "light" ? (
-          <LightIcon size={16} />
-        ) : (
-          <DarkIcon size={16} />
-        )}
-      </button>
-    </div>
+    <button
+      className={cn(
+        "rounded-lg border-2 bg-gradient-to-b p-2 transition duration-300 hover:scale-110 active:scale-100 dark:border-neutral-700 dark:from-neutral-800 dark:to-neutral-900 dark:text-neutral-50",
+        className,
+      )}
+      onClick={toggleTheme}
+    >
+      {resolvedTheme === "light" ? (
+        <LightIcon size={16} />
+      ) : (
+        <DarkIcon size={16} />
+      )}
+    </button>
   );
 };
 

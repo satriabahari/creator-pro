@@ -4,8 +4,8 @@ import Profile from "./Profile";
 
 const Header = () => {
   return (
-    <header className="w-full">
-      <div className="flex items-center justify-between py-3 px-4">
+    <header className="fixed z-10 w-full border-b dark:border-neutral-700 dark:bg-[#121212]/50 backdrop-blur-xl">
+      <div className="flex items-center justify-between px-8 py-3">
         <Profile />
         <MenuItemList />
         <ActionButtons />

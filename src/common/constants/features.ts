@@ -6,6 +6,7 @@ const FEATURE_ITEMS: FeatureProps[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aperiam labore fugit tempore ab qui molestias voluptatum possimus saepe doloribus",
     image: "/images/hero.jpg",
+    aosType: "fade-left",
     isShow: true,
   },
   {
@@ -14,6 +15,7 @@ const FEATURE_ITEMS: FeatureProps[] = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aperiam labore fugit tempore ab qui molestias voluptatum possimus saepe doloribus",
     image: "/images/hero.jpg",
     positionGrid: "order-first",
+    aosType: "fade-right",
     isShow: true,
   },
   {
@@ -21,6 +23,7 @@ const FEATURE_ITEMS: FeatureProps[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aperiam labore fugit tempore ab qui molestias voluptatum possimus saepe doloribus",
     image: "/images/hero.jpg",
+    aosType: "fade-left",
     isShow: true,
   },
   {
@@ -29,6 +32,7 @@ const FEATURE_ITEMS: FeatureProps[] = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aperiam labore fugit tempore ab qui molestias voluptatum possimus saepe doloribus",
     image: "/images/hero.jpg",
     positionGrid: "order-first",
+    aosType: "fade-right",
     isShow: true,
   },
 ];

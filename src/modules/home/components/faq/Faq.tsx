@@ -1,10 +1,11 @@
 import React from "react";
 import FaqList from "./FaqList";
 import SectionHeading from "@/common/components/elements/SectionHeading";
+import SubContainer from "@/common/components/elements/SubContainer";
 
 const Faq = () => {
   return (
-    <section className="px-28">
+    <SubContainer className="px-28" data-aos="fade-up">
       <div className="rounded-2xl bg-gradient-to-br p-0.5 dark:from-purple-500 dark:via-pink-500 dark:to-yellow-500">
         <div className="space-y-10 rounded-2xl bg-neutral-200 bg-gradient-to-b p-16 dark:from-neutral-800 dark:to-neutral-900">
           <SectionHeading
@@ -21,7 +22,7 @@ const Faq = () => {
           </p>
         </div>
       </div>
-    </section>
+    </SubContainer>
   );
 };
 

@@ -15,8 +15,10 @@ const MarqueeElement = ({
     <Marquee
       direction={direction}
       speed={75}
-      className={withPadding ? "py-3" : ""}
+      // className={withPadding ? "py-3" : ""}
       pauseOnHover
+      gradient
+      gradientColor="#121212"
     >
       {children}
     </Marquee>

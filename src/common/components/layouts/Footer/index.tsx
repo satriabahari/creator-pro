@@ -5,7 +5,7 @@ import MenuList from "./MenuList";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col gap-4">
+    <footer className="flex flex-col gap-4 px-16">
       <div className="grid grid-cols-2 gap-4">
         <MenuList/>
         <div className="flex flex-col gap-4">
