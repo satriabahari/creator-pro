@@ -13,3 +13,37 @@
 ::-webkit-scrollbar-thumb {
   @apply rounded-[3px] border-2 border-neutral-300 bg-neutral-600 dark:bg-neutral-400;
 }
+
+.text-gradient-color {
+  @apply bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 bg-clip-text text-transparent;
+}
+
+.bg-gradient-color {
+  @apply bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500;
+}
+
+.border-gradient {
+  @apply border-2 dark:border-neutral-600;
+}
+
+.bubble-gradient {
+  position: relative;
+}
+
+.bubble-gradient::before {
+  content: "";
+  position: absolute;
+  left: -5%;
+  top: -5%;
+  z-index: -1;
+  height: 110%;
+  width: 110%;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right,
+    rgba(168, 85, 247, 0.25),
+    rgba(236, 72, 153, 0.25),
+    rgba(234, 179, 8, 0.25)
+  );
+  filter: blur(4rem);
+}
