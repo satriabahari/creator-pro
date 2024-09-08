@@ -7,4 +7,5 @@ export interface BlogProps {
   name: string;
   date?: string;
   isShow?: boolean;
+  [propname: string]: React.ReactNode | string | undefined;
 }
