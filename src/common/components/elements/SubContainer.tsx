@@ -1,8 +1,6 @@
-'use client'
+"use client";
 
-import { useEffect } from "react";
-import AOS from "aos";
-import 'aos/dist/aos.css';
+import { cn } from "@/lib/utils";
 
 interface SubContainerProps {
   children: React.ReactNode;
@@ -15,14 +13,11 @@ const SubContainer = ({
   className = "",
   ...others
 }: SubContainerProps) => {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      delay: 50,
-    });
-  }, []);
   return (
-    <div className={`${className}`} {...others}>
+    <div
+      className={cn("flex flex-col items-center justify-center", className)}
+      {...others}
+    >
       {children}
     </div>
   );

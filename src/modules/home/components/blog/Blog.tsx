@@ -7,13 +7,14 @@ import SubContainer from "@/common/components/elements/SubContainer";
 
 const Blog = () => {
   return (
-    <SubContainer
-      className="flex flex-col items-center gap-10"
-      data-aos="fade-up"
-    >
-      <SectionHeading title="Content Creator Blog" />
+    <SubContainer className="flex flex-col items-center gap-10" id="blog">
+      <SectionHeading
+        title="Content Creator Blog"
+        data-aos="fade-up"
+        data-aos-anchor="#blog"
+      />
       <BlogList />
-      <Button>
+      <Button data-aos="fade-up" data-aos-delay="600" data-aos-anchor="#blog">
         <Link href="/blog">Read More</Link>
       </Button>
     </SubContainer>

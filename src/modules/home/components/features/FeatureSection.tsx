@@ -5,34 +5,53 @@ import Image from "next/image";
 import React from "react";
 
 const FeatureSection = ({
+  id,
   title,
   description,
   image,
   positionGrid,
-  aosType,
+  aosTitle,
+  aosImage,
 }: FeatureProps) => {
   return (
-    <SubContainer className="grid grid-cols-2 gap-16 items-center" data-aos={aosType}>
-      <div className="space-y-4">
-        <h3 className="text-3xl font-semibold leading-tight dark:text-neutral-300 w-3/4">{title}</h3>
+    <SubContainer
+      className="grid grid-cols-2 items-center gap-16"
+      id={`feature-${id}`}
+    >
+      <div
+        className="space-y-4"
+        data-aos={aosTitle}
+        data-aos-anchor={`#feature-${id}`}
+      >
+        <h3 className="w-3/4 text-3xl font-semibold leading-tight dark:text-neutral-300">
+          {title}
+        </h3>
         <p className="dark:text-neutral-400">{description}</p>
       </div>
-      <div
+      {/* <div
         className={cn(
           "rounded-lg bg-gradient-to-br p-0.5 dark:from-purple-500 dark:via-pink-500 dark:to-yellow-500",
           positionGrid,
         )}
+      > */}
+      <div
+        className={cn(
+          "rounded-lg border-2 bg-gradient-to-b p-4 dark:border-neutral-700 dark:from-neutral-800 dark:to-neutral-900",
+          positionGrid,
+        )}
+        data-aos={aosImage}
+        data-aos-delay="300"
+        data-aos-anchor={`#feature-${id}`}
       >
-        <div className="rounded-lg bg-gradient-to-b p-4 dark:from-neutral-800 dark:to-neutral-900">
-          <Image
-            src={image}
-            width={200}
-            height={200}
-            alt={title}
-            className="h-full w-full rounded-md"
-          />
-        </div>
+        <Image
+          src={image}
+          width={200}
+          height={200}
+          alt={title}
+          className="h-full w-full rounded-md"
+        />
       </div>
+      {/* </div> */}
     </SubContainer>
   );
 };

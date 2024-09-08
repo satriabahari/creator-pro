@@ -4,10 +4,16 @@ import cn from "@/common/libs/clsxm";
 import { SosmedItemProps } from "@/common/types/sosmed";
 import React from "react";
 
-const SosmedItem = ({ title, icon, className }: SosmedItemProps) => {
+const SosmedItem = ({ title, icon, className, ...others }: SosmedItemProps) => {
   return (
     <Tooltip title={title}>
-      <div className={cn("rounded-full bg-neutral-300 p-2.5 hover:scale-[1.2] transition duration-300", className)}>
+      <div
+        className={cn(
+          "rounded-full bg-neutral-300 p-2.5 transition duration-300 hover:scale-[1.2]",
+          className,
+        )}
+        {...others}
+      >
         {icon}
       </div>
     </Tooltip>
@@ -24,6 +30,9 @@ const SosmedList = () => {
           icon={sosmed.icon}
           title={sosmed.title}
           className={sosmed.className}
+          data-aos="fade-up"
+          data-aos-delay={index * 100 + 200}
+          data-aos-anchor="#hero"
         />
       ))}
     </div>

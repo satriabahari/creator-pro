@@ -12,6 +12,9 @@ const ValueList = () => {
           icon={value.icon}
           title={value.title}
           description={value.description}
+          data-aos="fade-up"
+          data-aos-delay={index * 100 + 300}
+          data-aos-anchor="#value"
         />
       ))}
     </div>

@@ -5,7 +5,11 @@ import React from "react";
 
 const MenuList = () => {
   return (
-    <div className="rounded-2xl bg-gradient-to-br p-0.5 dark:from-purple-500 dark:via-pink-500 dark:to-yellow-500">
+    <div
+      className="rounded-2xl bg-gradient-to-br p-0.5 dark:from-purple-500 dark:via-pink-500 dark:to-yellow-500"
+      data-aos="fade-right"
+      data-aos-anchor="#footer"
+    >
       <div className="flex h-full flex-col gap-5 rounded-2xl bg-neutral-200 bg-gradient-to-b p-8 dark:from-neutral-800 dark:to-neutral-900">
         <div className="space-y-2">
           <div className="flex items-center gap-4">
@@ -19,7 +23,9 @@ const MenuList = () => {
               Content Creators
             </h2>
           </div>
-          <p className="text-neutral-600 dark:text-neutral-500">AI for content creators</p>
+          <p className="text-neutral-600 dark:text-neutral-500">
+            AI for content creators
+          </p>
           <hr className="border-t border-neutral-300" />
         </div>
         <div className="flex justify-between gap-4">

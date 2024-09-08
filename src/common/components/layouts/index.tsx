@@ -5,7 +5,9 @@ import Footer from "./footer";
 import Header from "./header";
 import Sidebar from "./dashboard/sidebar";
 import HeaderDashboard from "./dashboard/header";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 interface LayoutsProps {
   children: React.ReactNode;
 }
@@ -13,6 +15,15 @@ interface LayoutsProps {
 const Layouts = ({ children }: LayoutsProps) => {
   const pathname = usePathname();
   const isDashboard = pathname === "/dashboard";
+
+  useEffect(() => {
+    AOS.init({
+      duration: 600,
+      delay: 50,
+      anchorPlacement: "top-center",
+    });
+  }, []);
+
   return (
     <>
       {!isDashboard ? (
@@ -21,6 +32,7 @@ const Layouts = ({ children }: LayoutsProps) => {
           <div className="pb-4">
             <Header />
             <main className="px-16">{children}</main>
+            {/* bug */}
             <Footer />
           </div>
         </>
