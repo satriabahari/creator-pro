@@ -47,3 +47,7 @@
   );
   filter: blur(4rem);
 }
+
+.card-hover {
+  @apply transition duration-300 hover:scale-105 active:scale-100;
+}
