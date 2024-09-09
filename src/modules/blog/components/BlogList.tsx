@@ -7,7 +7,12 @@ const BlogList = () => {
   return (
     <div className="grid grid-cols-4 gap-4">
       {filteredBlogs.map((blog, index) => (
-        <BlogCard key={index} {...blog} />
+        <BlogCard
+          key={index}
+          {...blog}
+          data-aos="fade-up"
+          data-aos-delay={index * 100 + 300}
+        />
       ))}
     </div>
   );

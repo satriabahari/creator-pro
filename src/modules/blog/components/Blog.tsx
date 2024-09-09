@@ -4,13 +4,15 @@ import Pagination from "./Pagination";
 
 const Blog = () => {
   return (
-    <div>
+    <>
       <div className="my-28">
-        <h4 className="font-medium mb-4">All Blog Posts</h4>
+        <h4 className="mb-4 font-medium text-lg" data-aos="fade-down" data-aos-delay="100">
+          All Blog Posts
+        </h4>
         <BlogList />
       </div>
-      <Pagination/>
-    </div>
+      <Pagination />
+    </>
   );
 };
 

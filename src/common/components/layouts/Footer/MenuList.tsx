@@ -2,6 +2,7 @@ import MENU_FOOTER from "@/common/constants/menu_footer";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { SiContentstack as LogoIcon } from "react-icons/si";
 
 const MenuList = () => {
   return (
@@ -13,12 +14,13 @@ const MenuList = () => {
       <div className="flex h-full flex-col gap-5 rounded-2xl bg-neutral-200 bg-gradient-to-b p-8 dark:from-neutral-800 dark:to-neutral-900">
         <div className="space-y-2">
           <div className="flex items-center gap-4">
-            <Image
+            {/* <Image
               src="/images/logo/logo.png"
               width={36}
               height={36}
               alt="logo"
-            />
+            /> */}
+            <LogoIcon size={36} />
             <h2 className="text-lg font-semibold dark:text-neutral-300">
               Content Creators
             </h2>

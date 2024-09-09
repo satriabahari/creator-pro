@@ -10,6 +10,8 @@ const Blog = () => {
     <SubContainer className="flex flex-col items-center gap-10" id="blog">
       <SectionHeading
         title="Content Creator Blog"
+        label="The Blog"
+        description="Turn your vision into reality in just 3 simple steps"
         data-aos="fade-up"
         data-aos-anchor="#blog"
       />

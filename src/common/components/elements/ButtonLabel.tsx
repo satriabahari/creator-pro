@@ -7,9 +7,14 @@ interface ButtonLabelProps {
 
 const ButtonLabel = ({ children, ...others }: ButtonLabelProps) => {
   return (
-    <div className="border-gradient w-fit rounded-full" {...others}>
-      <button className="border-body-content flex items-center gap-1 rounded-full bg-gradient-to-r px-4 py-1 text-sm dark:from-neutral-700 dark:to-neutral-800 dark:text-neutral-100">
-        {children}
+    <div
+      className="w-fit rounded-full border-2 dark:border-neutral-700"
+      {...others}
+    >
+      <button className="rounded-full bg-gradient-to-r px-4 py-1 dark:from-neutral-800 dark:to-neutral-900 dark:text-neutral-100">
+        <span className="text-gradient-color flex items-center gap-1 text-sm font-semibold">
+          {children}
+        </span>
       </button>
     </div>
   );

@@ -12,6 +12,7 @@ const ImageHero = () => {
           src="/images/dashboard.png"
           width={1200}
           height={1080}
+          priority
           alt="hero"
           className="h-full max-w-5xl overflow-hidden rounded-lg object-cover"
         />

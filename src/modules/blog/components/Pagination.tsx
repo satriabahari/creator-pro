@@ -6,19 +6,37 @@ import {
 } from "react-icons/io";
 const Pagination = () => {
   return (
-    <div className="flex items-center justify-between">
-      <Button>
-        <PreviousIcon />
-        <span>Previous</span>
+    <div id="pagination" className="flex items-center justify-between">
+      <Button data-aos="fade-left">
+        <PreviousIcon className="text-purple-500" />
+        <div>Previous</div>
       </Button>
       <div className="flex items-center gap-4">
-        <Button>1</Button>
-        <Button>2</Button>
-        <Button>3</Button>
+        <Button
+          data-aos="fade-up"
+          data-aos-delay={1 * 100 + 100}
+          data-aos-anchor="#pagination"
+        >
+          1
+        </Button>
+        <Button
+          data-aos="fade-up"
+          data-aos-delay={2 * 100 + 100}
+          data-aos-anchor="#pagination"
+        >
+          2
+        </Button>
+        <Button
+          data-aos="fade-up"
+          data-aos-delay={3 * 100 + 100}
+          data-aos-anchor="#pagination"
+        >
+          3
+        </Button>
       </div>
-      <Button>
-        <span>Next</span>
-        <NextIcon />
+      <Button data-aos="fade-right">
+        <div>Next</div>
+        <NextIcon className="text-yellow-500" />
       </Button>
     </div>
   );
