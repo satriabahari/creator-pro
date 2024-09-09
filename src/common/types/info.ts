@@ -3,6 +3,7 @@ export interface InfoItemProps {
   count: number;
   unit?: string;
   percent: number;
+  backgroundPercent?: string;
   icon: JSX.Element;
   isShow?: boolean;
 }

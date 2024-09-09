@@ -7,7 +7,7 @@ import Breakline from '@/common/components/elements/Breakline';
 const HeaderDashboard = () => {
   return (
     <header className="w-full">
-      <div className="w-full rounded-lg border border-purple-500 shadow-xl">
+      <div className="w-full rounded-lg border-2 dark:border-neutral-700 shadow-xl bg-gradient-to-b dark:from-neutral-800 dark:to-neutral-900">
         <div className="flex items-center justify-between px-4 py-3">
           <SearchBar/>
           <div className='flex items-center gap-4'>

@@ -16,19 +16,19 @@ const MENU_SIDEBAR_ITEMS: MenuSidebarItemProps[] = [
   },
   {
     title: "Task",
-    href: "/task",
+    href: "/dashboard/task",
     icon: <TaskIcon size={iconSize} />,
     isShow: true,
   },
   {
     title: "Monetization",
-    href: "/monetizaton",
+    href: "/dashboard/monetizaton",
     icon: <MonetizationIcon size={iconSize} />,
     isShow: true,
   },
   {
     title: "Settings",
-    href: "/settings",
+    href: "/dashboard/settings",
     icon: <SettingsIcon size={iconSize} />,
     isShow: true,
   },

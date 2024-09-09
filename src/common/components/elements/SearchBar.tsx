@@ -11,7 +11,7 @@ const SearchBar = ({ placeholder, className }: SearchBarProps) => {
   return (
     <div
       className={cn(
-        "flex items-center gap-2 rounded-full bg-neutral-200 px-4 py-2",
+        "flex items-center gap-2 rounded-full border-2 bg-neutral-200 dark:bg-neutral-700 px-4 py-2 dark:border-neutral-600 ",
         className,
       )}
     >
@@ -19,7 +19,7 @@ const SearchBar = ({ placeholder, className }: SearchBarProps) => {
       <input
         type="text"
         placeholder={placeholder ? placeholder : "Search"}
-        className="bg-neutral-200 text-sm outline-none"
+        className="text-sm outline-none bg-transparent"
       />
     </div>
   );

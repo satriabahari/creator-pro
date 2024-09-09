@@ -14,7 +14,7 @@ interface LayoutsProps {
 
 const Layouts = ({ children }: LayoutsProps) => {
   const pathname = usePathname();
-  const isDashboard = pathname === "/dashboard";
+  const isDashboard = pathname.startsWith("/dashboard");
 
   useEffect(() => {
     AOS.init({

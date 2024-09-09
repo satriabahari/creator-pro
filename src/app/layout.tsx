@@ -22,12 +22,12 @@ const RootLayout = async ({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <NextTopLoader
-          color="#05b6d3"
+          color="#a855f7"
           initialPosition={0.08}
           crawlSpeed={200}
           height={3}
           crawl={true}
-          // showSpinner={true}
+          showSpinner={false}
           easing="ease"
           speed={200}
           shadow="0 0 10px #05b6d3,0 0 5px #45c6c0"
