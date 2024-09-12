@@ -1,24 +1,22 @@
 import React from "react";
 import InfoList from "./InfoList";
-import TaskListCard from "./TaskListCard";
 import FollowerListCard from "./FollowerListCard";
 import VisitListCard from "./VisitListCard";
+import Profile from "./Profile";
 import SocialMediaStats from "./SocialMediaStats";
-import Integration from "./Integration";
 
 const Dashboard = () => {
   return (
-    <div className="space-y-4">
+    <div className="row-span-3 my-28 grid grid-cols-9 gap-4" 
+    id="dashboard"
+    
+    >
       <InfoList />
-      <div className="grid grid-cols-3 gap-4">
-        <TaskListCard />
-        <FollowerListCard />
-        <VisitListCard />
-      </div>
-      <div className="grid grid-cols-3 gap-4">
-        <SocialMediaStats />
-        <Integration />
-      </div>
+      <Profile />
+      {/* <TaskListCard /> */}
+      <FollowerListCard />
+      <VisitListCard />
+      <SocialMediaStats />
     </div>
   );
 };

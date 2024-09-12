@@ -1,0 +1,93 @@
+import Card from "@/common/components/elements/Card";
+import SOSMED_ITEMS from "@/common/constants/sosmed";
+import { cn } from "@/lib/utils";
+import Image from "next/image";
+import React from "react";
+import { FaYoutube } from "react-icons/fa";
+
+const Profile = () => {
+  const filteredSosmed = SOSMED_ITEMS.filter((item) => item.isShow);
+  return (
+    <Card className="col-span-3 row-span-3 flex flex-col justify-between gap-8 p-8"
+      data-aos="fade-left"
+      data-aos-delay="300"
+      data-aos-anchor="#dashboard"
+    >
+      <div
+        className="bg-gradient-color flex flex-col items-center gap-2 rounded-xl px-4 py-8"
+        data-aos="zoom-in"
+        data-aos-anchor="#dashboard"
+      >
+        <Image
+          src={"/images/hero.jpg"}
+          width={300}
+          height={300}
+          alt={"Profile Image"}
+          className="h-24 w-24 rounded-full border-2 dark:border-neutral-50"
+        />
+        <div className="flex flex-col">
+          <h4 className="font-medium dark:text-neutral-50">Satria Bahari</h4>
+          <p className="text-xs dark:text-neutral-300">Web developer</p>
+        </div>
+        <div className="flex gap-2">
+          <div className="rounded-full p-2 dark:bg-neutral-700">
+            <FaYoutube />
+          </div>
+          <div className="rounded-full p-2 dark:bg-neutral-700">
+            <FaYoutube />
+          </div>
+          <div className="rounded-full p-2 dark:bg-neutral-700">
+            <FaYoutube />
+          </div>
+        </div>
+      </div>
+      <div className="space-y-8 overflow-hidden rounded-xl border-2 bg-gradient-to-b p-4 dark:border-neutral-700 dark:from-neutral-800 dark:to-neutral-900">
+        <h3
+          className="text-xl font-medium dark:text-neutral-300"
+          data-aos="fade-down"
+          data-aos-anchor="#dashboard"
+        >
+          Integrations
+        </h3>
+        <div className="flex flex-col gap-4">
+          {filteredSosmed.map((sosmed, index) => (
+            <div
+              className="grid grid-cols-[2fr_1.7fr] items-center justify-between gap-4"
+              key={index}
+            >
+              <div
+                className="flex items-center gap-2"
+                data-aos="fade-right"
+                data-aos-delay={index * 100}
+                data-aos-anchor="#dashboard"
+              >
+                <div
+                  className={cn(
+                    "rounded-full border-2 p-2 dark:border-neutral-700",
+                    sosmed.className,
+                  )}
+                >
+                  {sosmed.icon}
+                </div>
+                <p className="text-sm dark:text-neutral-300">{sosmed.title}</p>
+              </div>
+              <button
+                className={cn(
+                  "rounded-full px-4 py-2 text-xs dark:bg-neutral-700",
+                  sosmed.isActive && "dark:bg-blue-500",
+                )}
+                data-aos="fade-left"
+                data-aos-delay={index * 100}
+                data-aos-anchor="#profile"
+              >
+                {sosmed.isActive ? "Connected" : "Connect"}
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Card>
+  );
+};
+
+export default Profile;

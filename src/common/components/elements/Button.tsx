@@ -13,7 +13,9 @@ const Button = ({ children, className = "", ...others }: ButtonProps) => {
       )}
       {...others}
     >
-      <div className="text-gradient-color flex items-center justify-center gap-2">{children}</div>
+      <div className="text-gradient-color flex items-center justify-center gap-2">
+        {children}
+      </div>
     </button>
 
     // </div>

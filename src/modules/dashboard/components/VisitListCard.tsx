@@ -7,6 +7,19 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
+export const options = {
+  responsive: true,
+  plugins: {
+    legend: {
+      position: "top" as const,
+    },
+    title: {
+      display: true,
+      text: "Follower List",
+    },
+  },
+};
+
 const VisitListCard = () => {
   const data = {
     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -34,10 +47,16 @@ const VisitListCard = () => {
       },
     ],
   };
+
   return (
-    <Card>
+    <Card
+      className="col-span-3"
+      data-aos="fade-down"
+      data-aos-delay="600"
+      data-aos-anchor="#dashboard"
+    >
       {/* <Doughnut data={data} /> */}
-      <Doughnut data={data} />
+      <Doughnut options={options} data={data} />
     </Card>
   );
 };

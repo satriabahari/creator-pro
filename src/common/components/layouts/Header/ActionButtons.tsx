@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../../elements/Button";
 import LocaleSwitcher from "../../elements/LocaleSwitcher";
 import ThemeSwitcher from "../../elements/ThemeSwitcher";
@@ -10,7 +11,9 @@ const ActionButtons = () => {
         <ThemeSwitcher />
       </div>
       <Button className="border-2 bg-gradient-to-b py-1 font-semibold text-neutral-50 dark:border-neutral-700 dark:from-neutral-800 dark:to-neutral-900">
-        <span className="text-gradient-color">Login</span>
+        <Link href="/auth/login" className="text-gradient-color">
+          Login
+        </Link>
       </Button>
     </div>
   );
