@@ -3,7 +3,7 @@ import FeaturesList from "./FeaturesList";
 
 const Features = () => {
   return (
-    <div className="px-8">
+    <div className="px-8 overflow-hidden">
       <FeaturesList />
     </div>
   );
