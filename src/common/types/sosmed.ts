@@ -3,5 +3,6 @@ export interface SosmedItemProps {
   title: string;
   className?: string;
   isShow?: boolean;
+  isActive?: boolean;
   [propname: string]: React.ReactNode | string | undefined;
 }

@@ -6,4 +6,5 @@ export interface InfoItemProps {
   backgroundPercent?: string;
   icon: JSX.Element;
   isShow?: boolean;
+  [propname: string]: React.ReactNode | string | undefined;
 }
