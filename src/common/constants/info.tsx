@@ -43,7 +43,7 @@ const INFO_ITEMS : InfoItemProps[] = [
     percent: 5,
     backgroundPercent: "bg-purple-300",
     icon: <ShareIcon size={iconSize} />,
-    isShow: true,
+    isShow: false,
   },
 ];
 

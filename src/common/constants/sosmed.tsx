@@ -19,18 +19,21 @@ const SOSMED_ITEMS: SosmedItemProps[] = [
     icon: <InstagramIcon size={iconSize} />,
     className: "bg-purple-200 text-purple-600",
     isShow: true,
+    isActive: true,
   },
   {
     title: "Youtube",
     icon: <YoutubeIcon size={iconSize} />,
     className: "bg-red-200 text-red-600",
     isShow: true,
+    isActive: true,
   },
   {
     title: "Facebook",
     icon: <FacebookIcon size={iconSize} />,
     className: "bg-blue-200 text-blue-600",
     isShow: true,
+    isActive: true,
   },
   {
     title: "Whatsapp",
