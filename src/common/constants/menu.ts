@@ -14,7 +14,7 @@ const MENU_ITEMS: MenuItemProps[] = [
   {
     title: "Community",
     href: "/community",
-    isShow: true,
+    isShow: false,
   },
   {
     title: "Dashboard",

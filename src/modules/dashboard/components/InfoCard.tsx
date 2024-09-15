@@ -13,7 +13,7 @@ const InfoCard = ({
 }: InfoItemProps) => {
   return (
     <div
-      className="col-span-2 space-y-4 rounded-2xl border-2 bg-neutral-200 bg-gradient-to-b p-4 dark:border-neutral-700 dark:from-neutral-800 dark:to-neutral-900"
+      className="col-span-2 space-y-4 rounded-xl border-2 bg-neutral-200 bg-gradient-to-b p-4 dark:border-neutral-700 dark:from-neutral-800 dark:to-neutral-900"
       {...others}
     >
       <div className="flex items-center justify-between">
