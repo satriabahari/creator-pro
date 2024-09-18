@@ -4,7 +4,7 @@ import "./globals.css";
 import Layouts from "@/common/components/layouts";
 // import { ThemeProvider } from "next-themes";
 import NextTopLoader from "nextjs-toploader";
-import { ThemeProvider } from "@/stores/theme";
+import ThemeProviderContext from "@/stores/theme";
 
 const inter = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -32,9 +32,9 @@ const RootLayout = async ({
           speed={200}
           shadow="0 0 10px #05b6d3,0 0 5px #45c6c0"
         />
-        <ThemeProvider>
+        <ThemeProviderContext>
           <Layouts>{children}</Layouts>
-        </ThemeProvider>
+        </ThemeProviderContext>
       </body>
     </html>
   );
