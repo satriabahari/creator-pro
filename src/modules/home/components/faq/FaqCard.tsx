@@ -10,11 +10,11 @@ const FaqCard = ({ question, answer, ...others }: FaqProps) => {
 
   return (
     <div
-      className="flex flex-col gap-4 rounded-2xl bg-neutral-300 bg-gradient-to-b p-6 dark:from-neutral-700 dark:to-neutral-800"
+      className="flex flex-col gap-4 rounded-2xl bg-gradient-to-b from-neutral-300 to-neutral-200 p-6 dark:from-neutral-700 dark:to-neutral-800"
       {...others}
     >
       <div className="flex items-center justify-between">
-        <p className="font-medium">{question}</p>
+        <p className="text-sm font-medium lg:text-base">{question}</p>
         <button onClick={() => setIsShow(!isShow)}>
           <ArrowIcon
             size={16}
@@ -29,6 +29,7 @@ const FaqCard = ({ question, answer, ...others }: FaqProps) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ y: -20, opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="text-sm lg:text-base"
           >
             {answer}
           </motion.p>
