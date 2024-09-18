@@ -1,3 +1,4 @@
+import useIsMobile from "@/hooks/useIsMobile";
 import { FeatureProps } from "../types/feature";
 
 const FEATURE_ITEMS: FeatureProps[] = [
