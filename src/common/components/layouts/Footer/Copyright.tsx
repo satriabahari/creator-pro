@@ -1,7 +1,7 @@
 const Copyright = () => {
   return (
     <p
-      className="text-center text-sm text-neutral-600 dark:text-neutral-500"
+      className="text-neutral-500 text-center text-xs lg:text-sm"
       data-aos="zoom-in"
       data-aos-delay="400"
       data-aos-anchor="#footer"
