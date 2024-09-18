@@ -22,15 +22,15 @@
   @apply bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500;
 }
 
-.border-gradient {
+/* .border-gradient {
   @apply border-2 dark:border-neutral-600;
 }
 
 .bubble-gradient {
   position: relative;
-}
+} */
 
-.bubble-gradient::before {
+/* .bubble-gradient::before {
   content: "";
   position: absolute;
   left: -5%;
@@ -46,7 +46,7 @@
     rgba(234, 179, 8, 0.25)
   );
   filter: blur(4rem);
-}
+} */
 
 .card-hover {
   @apply transition duration-300 hover:scale-105 active:scale-100;
