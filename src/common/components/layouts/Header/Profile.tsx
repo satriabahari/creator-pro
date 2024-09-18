@@ -9,7 +9,9 @@ const Profile = () => {
         {/* <Image src="/images/logo/logo.png" width={20} height={20} alt="logo" /> */}
         <LogoIcon size={20} />
       </div>
-      <h2 className="text-lg font-medium text-neutral-300">Content Creators</h2>
+      <h2 className="font-medium text-neutral-700 dark:text-neutral-300 lg:text-lg">
+        Content Creators
+      </h2>
     </div>
   );
 };
