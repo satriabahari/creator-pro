@@ -9,11 +9,11 @@ const RegisterPage = () => {
   return (
     <section
       id="register"
-      className="relative grid h-screen grid-cols-2 overflow-hidden"
+      className="relative grid min-h-screen grid-cols-1 grid-rows-2 overflow-hidden lg:grid-cols-2 lg:grid-rows-1"
     >
       <Link
         href="/"
-        className="card-hover absolute left-4 top-4 rounded-full border-2 p-2 dark:border-neutral-700 dark:bg-neutral-900"
+        className="card-hover absolute left-4 top-4 rounded-full border-2 border-neutral-300 bg-gradient-to-b from-neutral-200 to-neutral-100 p-2 dark:border-neutral-700 dark:from-neutral-800 dark:to-neutral-900"
         data-aos="fade-left"
         data-aos-delay="400"
         data-aos-anchor="#login"
@@ -29,10 +29,10 @@ const RegisterPage = () => {
       />
 
       {/* Visual */}
-      <div className="flex flex-col justify-center gap-16 bg-gradient-to-b p-16 dark:from-neutral-800 dark:to-neutral-900">
+      <div className="flex min-h-screen flex-col justify-center gap-16 bg-gradient-to-b from-neutral-200 to-neutral-100 p-16 dark:from-neutral-800 dark:to-neutral-900">
         <div className="flex flex-col gap-2 text-center">
           <h2
-            className="text-2xl font-semibold"
+            className="text-2xl font-semibold text-neutral-700 dark:text-neutral-300"
             data-aos="fade-down"
             data-aos-delay="400"
             data-aos-anchor="#login"
@@ -40,7 +40,7 @@ const RegisterPage = () => {
             The simplest way to manage your content
           </h2>
           <p
-            className="text-sm dark:text-neutral-500"
+            className="text-sm text-neutral-500"
             data-aos="fade-down"
             data-aos-delay="600"
             data-aos-anchor="#login"
@@ -55,7 +55,7 @@ const RegisterPage = () => {
             width={500}
             height={500}
             alt="login"
-            className="rounded-2xl border-2 dark:border-neutral-700"
+            className="rounded-2xl border-2 border-neutral-300 dark:border-neutral-700"
             data-aos="zoom-in"
             data-aos-delay="400"
             data-aos-anchor="#login"
@@ -74,9 +74,9 @@ const RegisterPage = () => {
       </div>
 
       {/* Login */}
-      <div className="flex flex-col items-center justify-center gap-4 px-32">
+      <div className="flex min-h-screen flex-col items-center justify-center gap-4 px-16 lg:px-32">
         <div
-          className="w-fit rounded-lg bg-gradient-to-br p-1.5 dark:from-purple-400 dark:via-pink-400 dark:to-yellow-400"
+          className="w-fit rounded-lg bg-gradient-to-br from-purple-400 via-pink-400 to-yellow-400 p-1.5"
           data-aos="zoom-in"
           data-aos-anchor="#register"
           data-aos-delay="400"
@@ -85,7 +85,7 @@ const RegisterPage = () => {
         </div>
         <div className="space-y-2 text-center">
           <h2
-            className="text-xl font-semibold"
+            className="text-xl font-semibold text-neutral-700 dark:text-neutral-300"
             data-aos="fade-down"
             data-aos-delay="400"
             data-aos-anchor="#register"
@@ -93,7 +93,7 @@ const RegisterPage = () => {
             Create account for content creators AI
           </h2>
           <p
-            className="text-sm dark:text-neutral-500"
+            className="text-sm text-neutral-500"
             data-aos="fade-down"
             data-aos-delay="600"
             data-aos-anchor="#register"
@@ -104,7 +104,7 @@ const RegisterPage = () => {
         <div className="flex w-full justify-between gap-4">
           <div className="w-full space-y-1">
             <p
-              className="font-medium dark:text-neutral-300"
+              className="font-medium text-neutral-700 dark:text-neutral-300"
               data-aos="zoom-out"
               data-aos-delay="800"
               data-aos-anchor="#register"
@@ -113,7 +113,7 @@ const RegisterPage = () => {
             </p>
             <input
               type="text"
-              className="w-full rounded-lg border-none px-4 py-2 outline-none placeholder:text-neutral-500 dark:bg-neutral-800"
+              className="w-full rounded-lg border-none bg-neutral-200 px-4 py-2 outline-none placeholder:text-neutral-500 dark:bg-neutral-800"
               placeholder="First name"
               data-aos="fade-down"
               data-aos-delay="400"
@@ -122,7 +122,7 @@ const RegisterPage = () => {
           </div>
           <div className="w-full space-y-1">
             <p
-              className="font-medium dark:text-neutral-300"
+              className="font-medium text-neutral-700 dark:text-neutral-300"
               data-aos="zoom-out"
               data-aos-delay="800"
               data-aos-anchor="#register"
@@ -131,7 +131,7 @@ const RegisterPage = () => {
             </p>
             <input
               type="text"
-              className="w-full rounded-lg border-none px-4 py-2 outline-none placeholder:text-neutral-500 dark:bg-neutral-800"
+              className="w-full rounded-lg border-none bg-neutral-200 px-4 py-2 outline-none placeholder:text-neutral-500 dark:bg-neutral-800"
               placeholder="Last name"
               data-aos="fade-down"
               data-aos-delay="400"
@@ -141,7 +141,7 @@ const RegisterPage = () => {
         </div>
         <div className="w-full space-y-1">
           <p
-            className="font-medium dark:text-neutral-300"
+            className="font-medium text-neutral-700 dark:text-neutral-300"
             data-aos="zoom-out"
             data-aos-delay="800"
             data-aos-anchor="#register"
@@ -150,7 +150,7 @@ const RegisterPage = () => {
           </p>
           <input
             type="email"
-            className="w-full rounded-lg border-none px-4 py-2 outline-none placeholder:text-neutral-500 dark:bg-neutral-800"
+            className="w-full rounded-lg border-none bg-neutral-200 px-4 py-2 outline-none placeholder:text-neutral-500 dark:bg-neutral-800"
             placeholder="Enter your email address"
             data-aos="fade-right"
             data-aos-delay="400"
@@ -159,7 +159,7 @@ const RegisterPage = () => {
         </div>
         <div className="w-full space-y-1">
           <p
-            className="font-medium dark:text-neutral-300"
+            className="font-medium text-neutral-700 dark:text-neutral-300"
             data-aos="zoom-out"
             data-aos-delay="800"
             data-aos-anchor="#register"
@@ -168,7 +168,7 @@ const RegisterPage = () => {
           </p>
           <input
             type="password"
-            className="w-full rounded-lg border-none px-4 py-2 outline-none placeholder:text-neutral-500 dark:bg-neutral-800"
+            className="w-full rounded-lg border-none bg-neutral-200 px-4 py-2 outline-none placeholder:text-neutral-500 dark:bg-neutral-800"
             placeholder="Enter your password"
             data-aos="fade-left"
             data-aos-delay="400"
@@ -189,13 +189,13 @@ const RegisterPage = () => {
             data-aos-anchor="#register"
           >
             I agree to the{" "}
-            <span className="cursor-pointer underline dark:text-neutral-300">
+            <span className="cursor-pointer text-neutral-700 underline dark:text-neutral-300">
               Terms & Conditions
             </span>
           </p>
         </div>
         <button
-          className="card-hover w-full rounded-lg border-2 bg-gradient-to-b px-4 py-2 font-medium dark:border-neutral-700 dark:from-neutral-800 dark:to-neutral-900"
+          className="card-hover w-full rounded-lg border-2 border-neutral-300 bg-gradient-to-b from-neutral-200 to-neutral-100 px-4 py-2 font-medium dark:border-neutral-700 dark:from-neutral-800 dark:to-neutral-900"
           data-aos="zoom-in"
           data-aos-delay="400"
           data-aos-anchor="#register"
@@ -204,13 +204,13 @@ const RegisterPage = () => {
         </button>
         <div className="flex w-full items-center gap-2">
           <div
-            className="h-1 w-full border-b dark:border-neutral-500"
+            className=":border-neutral-500 h-1 w-full border-b"
             data-aos="fade-right"
             data-aos-delay="800"
             data-aos-anchor="#register"
           />
           <p
-            className="w-full text-center text-xs font-medium dark:text-neutral-500"
+            className=":text-neutral-500 w-full text-center text-xs font-medium"
             data-aos="zoom-in"
             data-aos-delay="400"
             data-aos-anchor="#register"
@@ -218,7 +218,7 @@ const RegisterPage = () => {
             Or register with
           </p>
           <div
-            className="h-1 w-full border-b dark:border-neutral-500"
+            className=":border-neutral-500 h-1 w-full border-b"
             data-aos="fade-left"
             data-aos-delay="800"
             data-aos-anchor="#register"
@@ -226,7 +226,7 @@ const RegisterPage = () => {
         </div>
         <div className="flex w-full gap-4">
           <button
-            className="card-hover flex w-full items-center justify-center gap-2 rounded-lg px-4 py-2 dark:bg-neutral-800"
+            className="card-hover flex w-full items-center justify-center gap-2 rounded-lg bg-neutral-200 px-4 py-2 text-neutral-700 dark:bg-neutral-800 dark:text-neutral-300"
             data-aos="zoom-in"
             data-aos-delay="400"
             data-aos-anchor="#register"
@@ -235,7 +235,7 @@ const RegisterPage = () => {
             <span>Google</span>
           </button>
           <button
-            className="card-hover flex w-full items-center justify-center gap-2 rounded-lg px-4 py-2 dark:bg-neutral-800"
+            className="card-hover flex w-full items-center justify-center gap-2 rounded-lg bg-neutral-200 px-4 py-2 text-neutral-700 dark:bg-neutral-800 dark:text-neutral-300"
             data-aos="zoom-in"
             data-aos-delay="400"
             data-aos-anchor="#register"
@@ -245,7 +245,7 @@ const RegisterPage = () => {
           </button>
         </div>
         <p
-          className="text-sm font-medium dark:text-neutral-500"
+          className="text-sm font-medium text-neutral-500"
           data-aos="fade-up"
           data-aos-delay="800"
           data-aos-anchor="#register"
@@ -253,7 +253,7 @@ const RegisterPage = () => {
           Already have an account?{" "}
           <Link
             href="/auth/login"
-            className="font-semibold dark:text-neutral-300"
+            className="font-semibold text-neutral-500 dark:text-neutral-300"
           >
             Login
           </Link>
