@@ -5,7 +5,7 @@ import React from "react";
 const BlogList = () => {
   const filteredBlogs = BLOG_ITEMS.filter((item) => item.isShow);
   return (
-    <div className="grid grid-cols-4 gap-4">
+    <div className="grid lg:grid-cols-4 grid-cols-2 gap-4">
       {filteredBlogs.map((blog, index) => (
         <BlogCard
           key={index}

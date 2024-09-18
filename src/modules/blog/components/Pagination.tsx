@@ -9,9 +9,9 @@ const Pagination = () => {
     <div id="pagination" className="flex items-center justify-between">
       <Button data-aos="fade-left">
         <PreviousIcon className="text-purple-500" />
-        <div>Previous</div>
+        <div className="hidden lg:block">Previous</div>
       </Button>
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-2">
         <Button
           data-aos="fade-up"
           data-aos-delay={1 * 100 + 100}
@@ -33,9 +33,23 @@ const Pagination = () => {
         >
           3
         </Button>
+        <Button
+          data-aos="fade-up"
+          data-aos-delay={4 * 100 + 100}
+          data-aos-anchor="#pagination"
+        >
+          ...
+        </Button>
+        <Button
+          data-aos="fade-up"
+          data-aos-delay={5 * 100 + 100}
+          data-aos-anchor="#pagination"
+        >
+          10
+        </Button>
       </div>
       <Button data-aos="fade-right">
-        <div>Next</div>
+        <div className="hidden lg:block">Next</div>
         <NextIcon className="text-yellow-500" />
       </Button>
     </div>

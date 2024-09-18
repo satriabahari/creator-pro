@@ -11,12 +11,12 @@ const BlogPage = () => {
         description=""
       /> */}
       <div className="space-y-6 text-center">
-        <h1 className="text-5xl font-semibold" data-aos="zoom-in">
+        <h1 className="lg:text-5xl text-4xl font-semibold" data-aos="zoom-in">
           <span className="text-gradient-color">My Blogs</span>: Stories and
           Creators
         </h1>
         <p
-          className="text-neutral-400"
+          className="text-neutral-400 text-sm lg:text-base"
           data-aos="fade-down"
           data-aos-delay="200"
         >
