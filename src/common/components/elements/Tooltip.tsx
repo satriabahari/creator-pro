@@ -34,7 +34,7 @@ const Tooltip = ({ children, title }: TooltipProps) => {
       {isTooltipVisible && (
         <AnimatePresence>
           <motion.div
-            className="absolute bottom-full mb-2 rounded bg-neutral-400 px-2 py-1 text-xs font-medium"
+            className="absolute bottom-full mb-2 rounded bg-neutral-700 px-2 py-1 text-xs font-medium text-neutral-300 dark:bg-neutral-200 dark:text-neutral-700"
             variants={tooltipVariants}
             initial="hidden"
             animate="visible"

@@ -1,3 +1,6 @@
+'use client'
+
+import { useTheme } from "next-themes";
 import Marquee from "react-fast-marquee";
 
 interface MarqueeElementProps {
@@ -11,6 +14,8 @@ const MarqueeElement = ({
   direction = "left",
   withPadding = true,
 }: MarqueeElementProps) => {
+  const { resolvedTheme } = useTheme();
+
   return (
     <Marquee
       direction={direction}
@@ -18,7 +23,7 @@ const MarqueeElement = ({
       // className={withPadding ? "py-3" : ""}
       pauseOnHover
       gradient
-      gradientColor="#121212"
+      gradientColor={resolvedTheme === "dark" ? "#121212" : "#ffffff"}
     >
       {children}
     </Marquee>
