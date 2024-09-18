@@ -50,7 +50,7 @@ const VisitListCard = () => {
 
   return (
     <Card
-      className="col-span-3"
+      className="col-span-1 lg:col-span-3"
       data-aos="fade-down"
       data-aos-delay="600"
       data-aos-anchor="#dashboard"

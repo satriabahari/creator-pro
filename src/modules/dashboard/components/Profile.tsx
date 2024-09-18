@@ -8,7 +8,8 @@ import { FaYoutube } from "react-icons/fa";
 const Profile = () => {
   const filteredSosmed = SOSMED_ITEMS.filter((item) => item.isShow);
   return (
-    <Card className="col-span-3 row-span-3 flex flex-col justify-between gap-8 p-8"
+    <Card
+      className="col-span-1 row-span-1 flex flex-col justify-between gap-8 p-8 lg:col-span-3 lg:row-span-3"
       data-aos="fade-left"
       data-aos-delay="300"
       data-aos-anchor="#dashboard"
@@ -26,24 +27,28 @@ const Profile = () => {
           className="h-24 w-24 rounded-full border-2 dark:border-neutral-50"
         />
         <div className="flex flex-col">
-          <h4 className="font-medium dark:text-neutral-50">Satria Bahari</h4>
-          <p className="text-xs dark:text-neutral-300">Web developer</p>
+          <h4 className="font-medium text-neutral-900 dark:text-neutral-50">
+            Satria Bahari
+          </h4>
+          <p className="text-xs text-neutral-700 dark:text-neutral-300">
+            Web developer
+          </p>
         </div>
         <div className="flex gap-2">
-          <div className="rounded-full p-2 dark:bg-neutral-700">
+          <div className="rounded-full bg-neutral-300 p-2 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300">
             <FaYoutube />
           </div>
-          <div className="rounded-full p-2 dark:bg-neutral-700">
+          <div className="rounded-full bg-neutral-300 p-2 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300">
             <FaYoutube />
           </div>
-          <div className="rounded-full p-2 dark:bg-neutral-700">
+          <div className="rounded-full bg-neutral-300 p-2 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300">
             <FaYoutube />
           </div>
         </div>
       </div>
-      <div className="space-y-8 overflow-hidden rounded-xl border-2 bg-gradient-to-b p-4 dark:border-neutral-700 dark:from-neutral-800 dark:to-neutral-900">
+      <div className="space-y-8 overflow-hidden rounded-xl border-2 border-neutral-300 bg-gradient-to-b p-4 dark:border-neutral-700 dark:from-neutral-800 dark:to-neutral-900">
         <h3
-          className="text-xl font-medium dark:text-neutral-300"
+          className="text-xl font-medium text-neutral-700 dark:text-neutral-300"
           data-aos="fade-down"
           data-aos-anchor="#dashboard"
         >
@@ -63,18 +68,20 @@ const Profile = () => {
               >
                 <div
                   className={cn(
-                    "rounded-full border-2 p-2 dark:border-neutral-700",
+                    "rounded-full border-2 border-neutral-300 p-2 dark:border-neutral-700",
                     sosmed.className,
                   )}
                 >
                   {sosmed.icon}
                 </div>
-                <p className="text-sm dark:text-neutral-300">{sosmed.title}</p>
+                <p className="text-sm text-neutral-700 dark:text-neutral-300">
+                  {sosmed.title}
+                </p>
               </div>
               <button
                 className={cn(
-                  "rounded-full px-4 py-2 text-xs dark:bg-neutral-700",
-                  sosmed.isActive && "dark:bg-blue-500",
+                  "rounded-full bg-neutral-300 px-4 py-2 text-xs dark:bg-neutral-700",
+                  sosmed.isActive && "bg-blue-500 dark:bg-blue-500",
                 )}
                 data-aos="fade-left"
                 data-aos-delay={index * 100}

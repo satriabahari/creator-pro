@@ -13,11 +13,13 @@ const InfoCard = ({
 }: InfoItemProps) => {
   return (
     <div
-      className="col-span-2 space-y-4 rounded-xl border-2 bg-neutral-200 bg-gradient-to-b p-4 dark:border-neutral-700 dark:from-neutral-800 dark:to-neutral-900"
+      className="lg:col-span-2 space-y-4 rounded-xl border-2 border-neutral-300 bg-gradient-to-b from-neutral-200 to-neutral-100 p-4 dark:border-neutral-700 dark:from-neutral-800 dark:to-neutral-900"
       {...others}
     >
       <div className="flex items-center justify-between">
-        <span className="text-sm">{title}</span>
+        <span className="text-sm text-neutral-700 dark:text-neutral-300 font-medium">
+          {title}
+        </span>
         <div>
           <div
             className={cn(
@@ -25,14 +27,16 @@ const InfoCard = ({
               backgroundPercent,
             )}
           >
-            <span className="text-xs">{percent}%</span>
+            <span className="text-xs text-neutral-700 dark:text-neutral-300">
+              {percent}%
+            </span>
             <ArrowIcon size={16} />
           </div>
         </div>
       </div>
       <div className="flex items-center justify-between">
         <div className="flex items-end gap-2">
-          <span className="text-xl font-medium">{count}</span>
+          <span className="text-xl font-medium text-neutral-900 dark:text-neutral-50">{count}</span>
           <span className="text-sm text-neutral-500">{unit}</span>
         </div>
         <div className="bg-gradient-color rounded-lg p-2">{icon}</div>

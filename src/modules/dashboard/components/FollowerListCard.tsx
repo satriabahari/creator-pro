@@ -86,7 +86,7 @@ export const data = {
 const FollowerListCard = () => {
   return (
     <Card
-      className="col-span-3"
+      className="lg:col-span-3 col-span-1"
       data-aos="fade-down"
       data-aos-delay="500"
       data-aos-anchor="#dashboard"

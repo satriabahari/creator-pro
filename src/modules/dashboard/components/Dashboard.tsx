@@ -7,7 +7,7 @@ import SocialMediaStats from "./SocialMediaStats";
 
 const Dashboard = () => {
   return (
-    <div className="row-span-3 my-28 grid grid-cols-9 gap-4" 
+    <div className="lg:row-span-3 my-28 grid lg:grid-cols-9 gap-4 overflow-hidden" 
     id="dashboard"
     
     >
