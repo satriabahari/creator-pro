@@ -5,7 +5,7 @@ import ValueCard from "./ValueCard";
 const ValueList = () => {
   const filteredValues = VALUE_ITEMS.filter((item) => item.isShow);
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid lg:grid-cols-3 grid-cols-2 gap-4">
       {filteredValues.map((value, index) => (
         <ValueCard
           key={index}

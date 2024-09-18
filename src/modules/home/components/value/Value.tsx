@@ -5,7 +5,7 @@ import ButtonLabel from "@/common/components/elements/ButtonLabel";
 
 const Value = () => {
   return (
-    <SubContainer className="space-y-20 px-8" id="value">
+    <SubContainer className="space-y-20 lg:px-8" id="value">
       <SectionHeading
         label="The Value"
         title="Value us"
