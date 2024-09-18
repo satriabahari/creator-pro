@@ -9,7 +9,7 @@ const SosmedItem = ({ title, icon, className, ...others }: SosmedItemProps) => {
     <Tooltip title={title}>
       <div
         className={cn(
-          "rounded-full bg-neutral-300 p-2.5 transition duration-300 hover:scale-[1.2]",
+          "rounded-full bg-neutral-300 lg:p-2.5 p-1.5 transition duration-300 hover:scale-[1.2]",
           className,
         )}
         {...others}

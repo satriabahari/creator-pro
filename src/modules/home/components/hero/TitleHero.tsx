@@ -3,19 +3,19 @@ import React from "react";
 const TitleHero = () => {
   return (
     <div
-      className="flex flex-col items-center space-y-5 text-center"
+      className="flex flex-col items-center lg:space-y-5 space-y-2 text-center"
       data-aos="zoom-in"
       data-aos-anchor="#hero"
     >
-      <h1 className="text-6xl font-bold leading-tight text-neutral-800 dark:text-neutral-300">
+      <h1 className="lg:text-6xl text-4xl font-bold leading-tight text-neutral-700 dark:text-neutral-300">
         Creatos, Lunch your <br />
-        <span className="bg-gradient-to-r from-blue-600 via-fuchsia-500 to-rose-700 bg-clip-text text-transparent dark:from-purple-500 dark:via-pink-500 dark:to-yellow-500">
+        <span className="bg-gradient-to-r bg-clip-text text-transparent from-purple-500 via-pink-500 to-yellow-500">
           knowledge business
         </span>{" "}
         in minutes
       </h1>
       <h5
-        className="w-2/3 text-neutral-500 dark:text-neutral-400"
+        className="lg:w-2/3 text-neutral-500 text-xs lg:text-base dark:text-neutral-400"
         data-aos="fade-down"
         data-aos-delay="200"
       >

@@ -4,7 +4,7 @@ const ImageHero = () => {
   return (
     <div className="bubble-gradient">
       <div
-        className="w-fit rounded-xl border-2 p-2 dark:border-neutral-700"
+        className="w-fit rounded-xl border-2 border-neutral-300 p-2 dark:border-neutral-700"
         data-aos="fade-up"
         data-aos-delay="200"
       >
@@ -14,7 +14,7 @@ const ImageHero = () => {
           height={1080}
           priority
           alt="hero"
-          className="h-full max-w-5xl overflow-hidden rounded-lg object-cover"
+          className="h-full overflow-hidden rounded-lg object-cover lg:max-w-5xl"
         />
       </div>
     </div>
