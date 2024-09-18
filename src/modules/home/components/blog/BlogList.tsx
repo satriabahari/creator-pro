@@ -4,7 +4,7 @@ import BlogCard from "../../../../common/components/elements/BlogCard";
 
 const BlogList = () => {
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-4 gap-8">
       {BLOG_ITEMS.slice(0, 3).map((blog, index) => (
         <BlogCard
           key={index}
