@@ -2,21 +2,44 @@ import Image from "next/image";
 
 const ImageHero = () => {
   return (
-    <div className="bubble-gradient">
-      <div
-        className="w-fit rounded-xl border-2 border-neutral-300 p-2 dark:border-neutral-700"
-        data-aos="fade-up"
+    <div
+      className="relative w-fit rounded-xl p-1"
+      data-aos="fade-up"
+      data-aos-delay="200"
+    >
+      <Image
+        src="/images/laptop-responsive.png"
+        width={1200}
+        height={1080}
+        priority
+        alt="laptop"
+        data-aos="zoom-in"
         data-aos-delay="200"
-      >
-        <Image
-          src="/images/dashboard.png"
-          width={1200}
-          height={1080}
-          priority
-          alt="hero"
-          className="h-full overflow-hidden rounded-lg object-cover lg:max-w-5xl"
-        />
-      </div>
+        data-aos-anchor="#hero-image"
+        className="h-full rounded-lg lg:max-w-5xl"
+      />
+      <Image
+        src="/images/mobile-responsive.png"
+        width={116}
+        height={365}
+        priority
+        alt="mobile"
+        data-aos="fade-down"
+        data-aos-delay="600"
+        data-aos-anchor="#hero-image"
+        className="absolute left-0  md:bottom-5 bottom-0 lg:bottom-7"
+      />
+      <Image
+        src="/images/ipad-responsive.png"
+        width={229}
+        height={564}
+        priority
+        alt="ipad"
+        data-aos="fade-left"
+        data-aos-delay="600"
+        data-aos-anchor="#hero-image"
+        className="absolute right-0  md:bottom-5 bottom-0 lg:bottom-7 hidden md:block"
+      />
     </div>
   );
 };

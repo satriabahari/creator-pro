@@ -9,7 +9,7 @@ const SosmedItem = ({ title, icon, className, ...others }: SosmedItemProps) => {
     <Tooltip title={title}>
       <div
         className={cn(
-          "rounded-full bg-neutral-300 lg:p-2.5 p-1.5 transition duration-300 hover:scale-[1.2]",
+          "rounded-full bg-neutral-300 p-1.5 transition duration-300 hover:scale-[1.2] md:p-2 lg:p-2.5",
           className,
         )}
         {...others}
@@ -23,7 +23,7 @@ const SosmedItem = ({ title, icon, className, ...others }: SosmedItemProps) => {
 const SosmedList = () => {
   const filteredSosmeds = SOSMED_ITEMS.filter((item) => item.isShow);
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex items-center md:gap-3 gap-2">
       {filteredSosmeds.map((sosmed, index) => (
         <SosmedItem
           key={index}

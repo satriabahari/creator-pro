@@ -5,11 +5,12 @@ import SubContainer from "@/common/components/elements/SubContainer";
 
 const Testimonial = () => {
   return (
-    <SubContainer className="space-y-10">
+    <SubContainer className="space-y-12 lg:space-y-16">
       <SectionHeading
-        title="What Are People Say"
-        label="Our Customer"
-        description="Lorem ipsum dolor sit amet"
+        title="What Our Creators Say"
+        label="Real Voices, Real Impact"
+        // description="Discover how our platform has empowered content creators through their personal success stories."
+        description="Hear success stories from creators who have used CreatePro to scale their work."
         data-aos="fade-up"
       />
       <TestimonialList />

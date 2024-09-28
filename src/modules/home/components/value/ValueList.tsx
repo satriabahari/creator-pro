@@ -5,13 +5,11 @@ import ValueCard from "./ValueCard";
 const ValueList = () => {
   const filteredValues = VALUE_ITEMS.filter((item) => item.isShow);
   return (
-    <div className="grid lg:grid-cols-3 grid-cols-2 gap-4">
+    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
       {filteredValues.map((value, index) => (
         <ValueCard
           key={index}
-          icon={value.icon}
-          title={value.title}
-          description={value.description}
+          {...value}
           data-aos="fade-up"
           data-aos-delay={index * 100 + 300}
           data-aos-anchor="#value"

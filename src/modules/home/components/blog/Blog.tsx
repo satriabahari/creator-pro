@@ -7,11 +7,15 @@ import SubContainer from "@/common/components/elements/SubContainer";
 
 const Blog = () => {
   return (
-    <SubContainer className="flex flex-col items-center gap-10" id="blog">
+    <SubContainer
+      id="blog"
+      className="flex flex-col items-center space-y-12 lg:space-y-16"
+    >
       <SectionHeading
-        title="Content Creator Blog"
-        label="The Blog"
-        description="Turn your vision into reality in just 3 simple steps"
+        title="Latest Insights"
+        label="Creator Blog"
+        description="Tips, trends, and stories from the world of content creation."
+        // description="Read articles, guides, and interviews with successful creators for inspiration."
         data-aos="fade-up"
         data-aos-anchor="#blog"
       />

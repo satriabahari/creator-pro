@@ -1,3 +1,8 @@
+"use client";
+
+import Card from "@/common/components/elements/Card";
+import { useState } from "react";
+
 interface ValueCardProps {
   icon: JSX.Element;
   title?: string;
@@ -6,25 +11,38 @@ interface ValueCardProps {
 }
 
 const ValueCard = ({ icon, title, description, ...others }: ValueCardProps) => {
+  const [isHover, setIsHover] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHover(true);
+  };
+  const handleMouseLeave = () => {
+    setIsHover(false);
+  };
+
   return (
-    // <div className="rounded-2xl bg-gradient-to-br p-0.5 dark:from-purple-500 dark:via-pink-500 dark:to-yellow-500 hover:scale-105 duration-300 transition">
     <div
-      className="card-hover flex flex-col gap-5 rounded-2xl border-2 border-neutral-300 bg-neutral-200 bg-gradient-to-b from-neutral-200 to-neutral-100 p-8 dark:border-neutral-700 dark:from-neutral-800 dark:to-neutral-900"
-      {...others}
+      className={`rounded-2xl p-0.5 transition duration-300 ${isHover && "bg-gradient-color scale-[1.02]"} `}
     >
-      <div className="w-fit rounded-lg bg-gradient-to-br p-2 from-purple-500 via-pink-500 to-yellow-500">
-        {icon}
-      </div>
-      <div className="space-y-2">
-        <h3 className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
-          {title}
-        </h3>
-        <p className="text-sm  text-neutral-500">
-          {description}
-        </p>
-      </div>
+      <Card
+        className="flex h-full flex-col gap-5 rounded-2xl lg:p-8"
+        {...others}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <div
+          className={`w-fit rounded-lg p-2 ${isHover ? "bg-gradient-color" : "bg-neutral-300 text-neutral-800 dark:text-neutral-200 dark:bg-neutral-700"}`}
+        >
+          {icon}
+        </div>
+        <div className="space-y-2">
+          <h3 className="text-lg font-medium text-neutral-700 dark:text-neutral-300">
+            {title}
+          </h3>
+          <p className="text-sm text-neutral-500">{description}</p>
+        </div>
+      </Card>
     </div>
-    // </div>
   );
 };
 
