@@ -1,5 +1,6 @@
 export interface ContactItemProps {
   icon: JSX.Element;
-  url?: string;
+  href: string;
   isShow?: boolean;
+  [propname: string]: React.ReactNode | string | undefined;
 }

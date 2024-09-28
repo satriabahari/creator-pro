@@ -3,8 +3,10 @@ export interface FeatureProps {
   title: string;
   description: string;
   image: string;
-  positionGrid?: string;
-  aosImage?: string;
-  aosTitle?: string;
+  aosType?: string;
+  aosDelay?: number;
   isShow?: boolean;
+  colSpan?: string;
+  className?: string;
+  [propname: string]: React.ReactNode | string | undefined;
 }
