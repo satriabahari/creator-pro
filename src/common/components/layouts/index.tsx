@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Footer from "./footer/Footer";
+// import Footer from "./footer/Footer";
 import Header from "./header/Header";
 
 interface LayoutsProps {
@@ -33,7 +33,7 @@ const Layouts = ({ children }: LayoutsProps) => {
           <div className="pb-4">
             <Header />
             <main className="px-8 lg:px-16">{children}</main>
-            <Footer />
+            {/* <Footer /> */}
           </div>
         </>
       ) : (
