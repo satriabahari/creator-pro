@@ -14,7 +14,7 @@ const CategoryList = () => {
   };
 
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-4 overflow-x-auto">
       {filteredCategories.map((category, index) => (
         <CategoryItem
           isActive={activeIndex === index}

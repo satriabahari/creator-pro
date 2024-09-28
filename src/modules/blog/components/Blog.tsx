@@ -8,7 +8,7 @@ const Blog = () => {
   return (
     <div className="mt-28">
       <LatestPost />
-      <div className="my-28 space-y-6">
+      <div className="lg:my-28 my-14 space-y-6">
         <CategoryList />
         <BlogList />
       </div>

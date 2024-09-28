@@ -3,18 +3,23 @@ import React from "react";
 
 const LatestPost = () => {
   return (
-    <div className="grid lg:grid-cols-2 gap-8" id="latestpost">
-      <Image
-        src="/images/dashboard.png"
-        alt="hero"
-        width={500}
-        height={500}
-        className="h-full w-full rounded-2xl"
-        data-aos="fade-right"
-        data-aos-delay="200"
-        data-aos-anchor="#latestpost"
-      />
-      <div className="flex flex-col justify-between">
+    <div
+      className="grid gap-8 lg:grid-cols-2"
+      id="latestpost"
+      data-aos="fade-right"
+      data-aos-delay="200"
+      data-aos-anchor="#latestpost"
+    >
+      <div className="bg-gradient-color rounded-2xl p-0.5">
+        <Image
+          src="/images/quality-content.jpg"
+          alt="hero"
+          width={500}
+          height={300}
+          className="h-[350px] w-full rounded-2xl object-cover"
+        />
+      </div>
+      <div className="flex flex-col justify-between gap-4">
         <div className="space-y-4">
           <div
             className="mb-2 w-fit rounded-full border-2 border-amber-500 px-4 py-1 text-xs font-semibold text-amber-500"
@@ -25,31 +30,33 @@ const LatestPost = () => {
             Latest Post
           </div>
           <h3
-            className="text-3xl font-semibold text-neutral-700 dark:text-neutral-300"
+            className="text-2xl font-semibold text-neutral-700 dark:text-neutral-300 lg:text-3xl"
             data-aos="fade-down"
             data-aos-delay="200"
             data-aos-anchor="#latestpost"
           >
-            A Beginners Guide to Web Development
+            How to Stay Consistent with Quality Content
           </h3>
           <p
-            className="text-sm text-neutral-500"
+            className="text-sm md:text-base text-neutral-500"
             data-aos="fade-down"
             data-aos-delay="400"
             data-aos-anchor="#latestpost"
           >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
-            voluptate dolorem, voluptas expedita ratione dolorum facere
-            inventore ea dolore, explicabo quae! Sunt eveniet tenetur labore?
-            Esse minus doloribus excepturi nihil aut quibusdam vel officiis
-            neque qui maxime! Fuga enim excepturi, libero provident soluta
-            similique iste dolorem, perferendis ipsam magnam reprehenderit.
+            This article explores a variety of strategies to help you
+            consistently create and deliver high-quality content that resonates
+            with your audience. You&apos;ll learn practical tips for maintaining
+            content standards, ensuring relevance, and building engagement over
+            time. By focusing on planning, consistency, and audience needs, you
+            can establish a strong content strategy that not only attracts but
+            also retains followers, ensuring long-term success for your brand or
+            platform.
           </p>
         </div>
         <div className="flex items-center gap-2">
           <Image
-            src={"/images/hero.jpg"}
-            className="h-8 w-8 rounded-full"
+            src={"/images/satria-bahari.jpg"}
+            className="h-10 w-10 rounded-full  border-2 dark:border-neutral-700"
             width={24}
             height={24}
             alt="Satria Bahari"

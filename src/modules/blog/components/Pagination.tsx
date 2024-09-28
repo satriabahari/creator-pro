@@ -21,20 +21,6 @@ const Pagination = () => {
         </Button>
         <Button
           data-aos="fade-up"
-          data-aos-delay={2 * 100 + 100}
-          data-aos-anchor="#pagination"
-        >
-          2
-        </Button>
-        <Button
-          data-aos="fade-up"
-          data-aos-delay={3 * 100 + 100}
-          data-aos-anchor="#pagination"
-        >
-          3
-        </Button>
-        <Button
-          data-aos="fade-up"
           data-aos-delay={4 * 100 + 100}
           data-aos-anchor="#pagination"
         >
