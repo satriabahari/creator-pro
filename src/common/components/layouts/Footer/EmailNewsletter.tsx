@@ -4,7 +4,6 @@ const EmailNewsletter = () => {
   return (
     <div
       className="rounded-2xl p-0.5"
-      // className="rounded-2xl bg-gradient-to-br p-0.5 dark:from-purple-500 dark:via-pink-500 dark:to-yellow-500"
       data-aos="fade-left"
       data-aos-anchor="#footer"
     >

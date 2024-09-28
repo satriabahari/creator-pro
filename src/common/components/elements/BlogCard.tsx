@@ -39,7 +39,7 @@ const BlogCard = ({
           width={300}
           height={200}
           alt={title}
-          className="h-[150px] w-[300px] rounded-lg"
+          className="md:h-[150px] md:w-[300px] h-[350px] w-full  rounded-lg"
         />
         <div className="px-2 py-4">
           <div className="space-y-4 lg:space-y-6">
