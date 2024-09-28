@@ -2,12 +2,16 @@ import React from "react";
 import MENU_ITEMS from "@/common/constants/menu";
 import MenuItem from "./MenuItem";
 
-const MenuItemList = () => {
+interface MenuItemListProps {
+  setIsOpen?: (isOpen: boolean) => void;
+}
+
+const MenuItemList = ({setIsOpen}: MenuItemListProps) => {
   const filteredMenus = MENU_ITEMS.filter((menu) => menu.isShow);
   return (
-    <div className="lg:flex hidden items-center justify-center gap-10">
+    <div className="flex flex-col gap-4 md:flex-row lg:items-center lg:gap-10">
       {filteredMenus.map((menu, index) => (
-        <MenuItem key={index} title={menu.title} href={menu.href} />
+        <MenuItem key={index} {...menu} setIsOpen={setIsOpen}/>
       ))}
     </div>
   );

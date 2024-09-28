@@ -1,13 +1,12 @@
 import cn from "@/common/libs/clsxm";
 import React from "react";
 
-interface CardProps {
+interface CardProps extends React.HTMLProps<HTMLDivElement> {
   children: React.ReactNode;
   className?: string;
-  [propname: string]: React.ReactNode | string | undefined;
 }
 
-const Card = ({ children, className, ...others }: CardProps) => {
+const Card: React.FC<CardProps> = ({ children, className, ...others }) => {
   return (
     <div
       className={cn(

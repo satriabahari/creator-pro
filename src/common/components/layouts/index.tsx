@@ -3,8 +3,6 @@
 import { usePathname } from "next/navigation";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
-import Sidebar from "./dashboard/sidebar";
-import HeaderDashboard from "./dashboard/header";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";

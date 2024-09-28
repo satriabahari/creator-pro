@@ -32,13 +32,13 @@ const MenuList = () => {
         <div className="flex justify-between gap-4">
           {MENU_FOOTER.map((item, index) => (
             <div key={index}>
-              <h5 className="mb-4 text-sm lg:text-base font-medium text-neutral-700 dark:text-neutral-300">
+              <h5 className="mb-4 font-medium text-neutral-700 dark:text-neutral-300">
                 {item.title}
               </h5>
               <ul className="flex flex-col gap-2">
                 {item.menus.map((menu, index) => (
                   <Link href="/" key={index}>
-                    <li className="text-neutral-500 text-sm lg:text-base">{menu.title}</li>
+                    <li className="text-neutral-500 text-sm ">{menu.title}</li>
                   </Link>
                 ))}
               </ul>
