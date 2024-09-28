@@ -6,22 +6,18 @@ import React from "react";
 const BlogPage = () => {
   return (
     <Container className="pb-28 pt-44">
-      {/* <PageHeading
-        title=""
-        description=""
-      /> */}
       <div className="space-y-6 text-center">
-        <h1 className="lg:text-5xl text-4xl font-semibold" data-aos="zoom-in">
-          <span className="text-gradient-color">My Blogs</span>: Stories and
+        <h1 className="text-4xl font-semibold lg:text-5xl" data-aos="zoom-in">
+          <span className="text-gradient-color">Blogs</span>: From Creators to
           Creators
         </h1>
         <p
-          className="text-neutral-400 text-sm lg:text-base"
+          className="text-sm text-neutral-400 lg:text-base"
           data-aos="fade-down"
           data-aos-delay="200"
         >
-          Lorem ipsum dolor sit amet consectetur. Elementum amet congue purus
-          scelerisque.
+          Read articles, guides, and interviews with successful creators for
+          inspiration.
         </p>
       </div>
       <Blog />

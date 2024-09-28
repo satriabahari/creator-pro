@@ -12,16 +12,17 @@ const DashboardPage = () => {
         description="Lorem ipsum dolor sit amet consectetur. Elementum amet congue purus scelerisque."
       /> */}
       <div className="space-y-6 text-center">
-        <h1 className="lg:text-5xl text-4xl font-semibold" data-aos="zoom-in">
-          <span className="text-gradient-color">My Dashboard</span>: General Statistic
+        <h1 className="text-4xl font-semibold lg:text-5xl" data-aos="zoom-in">
+          <span className="text-gradient-color">Dashboard</span>: Full Control
+          in One Place
         </h1>
         <p
-          className="text-neutral-400 text-sm lg:text-base"
+          className="m-auto text-sm text-neutral-400 lg:w-1/2 md:w-3/4 lg:text-base"
           data-aos="fade-down"
           data-aos-delay="200"
         >
-          Lorem ipsum dolor sit amet consectetur. Elementum amet congue purus
-          scelerisque.
+          Track your progress in real-time, analyze content performance, and
+          manage platform integrations from our intuitive dashboard.
         </p>
       </div>
       <Dashboard />
