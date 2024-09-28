@@ -1,22 +1,27 @@
 const CATEGORY_BLOG_ITEMS: CategoryBlogProps[] = [
   {
     title: "All blogs",
-    bgColor: "bg-green-500",
+    bgColor: "bg-purple-500",
     isShow: true,
   },
   {
-    title: "Content",
+    title: "Content Strategy",
     bgColor: "bg-blue-500",
     isShow: true,
   },
   {
-    title: "Programming",
+    title: "Social Media",
+    bgColor: "bg-green-500",
+    isShow: true,
+  },
+  {
+    title: "SEO",
     bgColor: "bg-red-500",
     isShow: true,
   },
   {
-    title: "Web development",
-    bgColor: "bg-purple-500",
+    title: "Trends & Insights",
+    bgColor: "bg-pink-500",
     isShow: true,
   },
 ];

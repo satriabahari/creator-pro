@@ -10,14 +10,17 @@ const iconSize = 68;
 const CONTACT_ITEMS: ContactItemProps[] = [
   {
     icon: <EmailIcon size={iconSize} />,
+    href: "mailto:satriaabaharii@gmail.com",
     isShow: true,
   },
   {
     icon: <LinkedinIcon size={iconSize} />,
+    href: "https://www.linkedin.com/in/satria-bahari/",
     isShow: true,
   },
   {
     icon: <InstagramIcon size={iconSize} />,
+    href: "https://www.instagram.com/satriabaharii_/",
     isShow: true,
   },
 ];

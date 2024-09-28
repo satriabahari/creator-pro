@@ -3,19 +3,19 @@ const MENU_FOOTER = [
     title: "Company",
     menus: [
       {
-        title: "Home",
+        title: "About Us",
         url: "/",
       },
       {
-        title: "Home",
+        title: "Blog",
         url: "/",
       },
       {
-        title: "Home",
+        title: "Contact",
         url: "/",
       },
       {
-        title: "Home",
+        title: "Dashboard",
         url: "/",
       },
       {
@@ -28,15 +28,23 @@ const MENU_FOOTER = [
     title: "Legal",
     menus: [
       {
-        title: "Home",
+        title: "Privacy Policy",
         url: "/",
       },
       {
-        title: "Home",
+        title: "Terms of Service",
         url: "/",
       },
       {
-        title: "Home",
+        title: "Cookie Policy",
+        url: "/",
+      },
+      {
+        title: "Data Protection",
+        url: "/",
+      },
+      {
+        title: "License Agreements",
         url: "/",
       },
     ],
@@ -45,15 +53,23 @@ const MENU_FOOTER = [
     title: "Support",
     menus: [
       {
-        title: "Home",
+        title: "Help Center",
         url: "/",
       },
       {
-        title: "Home",
+        title: "FAQs",
         url: "/",
       },
       {
-        title: "Home",
+        title: "Community Forum",
+        url: "/",
+      },
+      {
+        title: "Report an Issue",
+        url: "/",
+      },
+      {
+        title: "System Status",
         url: "/",
       },
     ],
