@@ -1,4 +1,4 @@
-const Copyright = () => {
+export default function Copyright() {
   return (
     <footer
       className="text-center text-xs text-neutral-500 lg:text-sm"
@@ -9,6 +9,4 @@ const Copyright = () => {
       ©2024 Content Creators. All rights reserved.
     </footer>
   );
-};
-
-export default Copyright;
+}
