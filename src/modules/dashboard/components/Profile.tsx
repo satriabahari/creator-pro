@@ -2,14 +2,14 @@ import Card from "@/common/components/elements/Card";
 import SOSMED_ITEMS from "@/common/constants/sosmed";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { FaYoutube } from "react-icons/fa";
 
 const Profile = () => {
   const filteredSosmed = SOSMED_ITEMS.filter((item) => item.isShow);
   return (
     <Card
-      className="col-span-1 row-span-1 flex flex-col justify-between gap-8 p-8 lg:col-span-3 lg:row-span-3"
+      className="col-span-1 row-span-1 flex flex-col justify-between gap-8 p-8 md:col-span-3 md:row-span-2 lg:col-span-3 lg:row-span-3"
       data-aos="fade-left"
       data-aos-delay="300"
       data-aos-anchor="#dashboard"
@@ -20,30 +20,19 @@ const Profile = () => {
         data-aos-anchor="#dashboard"
       >
         <Image
-          src={"/images/hero.jpg"}
+          src={"/images/satria-bahari.jpg"}
           width={300}
           height={300}
           alt={"Profile Image"}
           className="h-24 w-24 rounded-full border-2 dark:border-neutral-50"
         />
-        <div className="flex flex-col">
-          <h4 className="font-medium text-neutral-900 dark:text-neutral-50">
+        <div className="flex flex-col items-center justify-center">
+          <h4 className="text-2xl font-medium text-neutral-900 dark:text-neutral-50">
             Satria Bahari
           </h4>
-          <p className="text-xs text-neutral-700 dark:text-neutral-300">
+          <p className="text-xs text-neutral-600 dark:text-neutral-200">
             Web developer
           </p>
-        </div>
-        <div className="flex gap-2">
-          <div className="rounded-full bg-neutral-300 p-2 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300">
-            <FaYoutube />
-          </div>
-          <div className="rounded-full bg-neutral-300 p-2 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300">
-            <FaYoutube />
-          </div>
-          <div className="rounded-full bg-neutral-300 p-2 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300">
-            <FaYoutube />
-          </div>
         </div>
       </div>
       <div className="space-y-8 overflow-hidden rounded-xl border-2 border-neutral-300 bg-gradient-to-b p-4 dark:border-neutral-700 dark:from-neutral-800 dark:to-neutral-900">

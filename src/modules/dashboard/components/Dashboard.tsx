@@ -1,21 +1,21 @@
 import React from "react";
 import InfoList from "./InfoList";
-import FollowerListCard from "./FollowerListCard";
-import VisitListCard from "./VisitListCard";
+import RevanueChart from "./RevenueChart";
+import EngagementChart from "./EngagementChart";
 import Profile from "./Profile";
-import SocialMediaStats from "./SocialMediaStats";
+import SocialMediaStats from "./GrowthChart";
 
 const Dashboard = () => {
   return (
-    <div className="lg:row-span-3 my-28 grid lg:grid-cols-9 gap-4 overflow-hidden" 
-    id="dashboard"
-    
+    <div
+      className="mt-20 grid gap-4 lg:overflow-hidden  lg:row-span-3 lg:mb-12 lg:mt-28 md:grid-cols-6 md:row-span-4 lg:grid-cols-9"
+      id="dashboard"
     >
       <InfoList />
       <Profile />
       {/* <TaskListCard /> */}
-      <FollowerListCard />
-      <VisitListCard />
+      <RevanueChart />
+      <EngagementChart />
       <SocialMediaStats />
     </div>
   );
