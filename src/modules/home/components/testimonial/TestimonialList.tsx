@@ -1,6 +1,6 @@
-import TESTIMONIAL_ITEMS from "@/common/constants/testimonial";
-import React from "react";
 import TestimonialCard from "./TestimonialCard";
+
+import TESTIMONIAL_ITEMS from "@/common/constants/testimonial";
 import MarqueeElement from "@/common/components/elements/MarqueeElement";
 
 const TestimonialList = () => {

@@ -1,5 +1,5 @@
-import React from "react";
 import FaqList from "./FaqList";
+
 import SectionHeading from "@/common/components/elements/SectionHeading";
 import SubContainer from "@/common/components/elements/SubContainer";
 

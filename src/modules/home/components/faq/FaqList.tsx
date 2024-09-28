@@ -1,6 +1,6 @@
-import FAQ_ITEMS from "@/common/constants/faq";
-import React from "react";
 import FaqCard from "./FaqCard";
+
+import FAQ_ITEMS from "@/common/constants/faq";
 
 const FaqList = () => {
   const filteredFaq = FAQ_ITEMS.filter((item) => item.isShow);
@@ -11,7 +11,7 @@ const FaqList = () => {
           key={index}
           {...item}
           data-aos="fade-up"
-          data-aos-delay={(index * 150) + 300}
+          data-aos-delay={index * 150 + 300}
           data-aos-anchor="#faq"
         />
       ))}

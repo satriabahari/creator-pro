@@ -1,7 +1,5 @@
-import Container from "@/common/components/elements/Container";
-import PageHeading from "@/common/components/elements/PageHeading";
 import Blog from "@/modules/blog";
-import React from "react";
+import Container from "@/common/components/elements/Container";
 
 const BlogPage = () => {
   return (

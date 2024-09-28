@@ -1,7 +1,8 @@
 "use client";
 
-import Card from "@/common/components/elements/Card";
 import { useState } from "react";
+
+import Card from "@/common/components/elements/Card";
 
 interface ValueCardProps {
   icon: JSX.Element;
@@ -31,7 +32,7 @@ const ValueCard = ({ icon, title, description, ...others }: ValueCardProps) => {
         onMouseLeave={handleMouseLeave}
       >
         <div
-          className={`w-fit rounded-lg p-2 ${isHover ? "bg-gradient-color" : "bg-neutral-300 text-neutral-800 dark:text-neutral-200 dark:bg-neutral-700"}`}
+          className={`w-fit rounded-lg p-2 ${isHover ? "bg-gradient-color" : "bg-neutral-300 text-neutral-800 dark:bg-neutral-700 dark:text-neutral-200"}`}
         >
           {icon}
         </div>

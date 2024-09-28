@@ -1,11 +1,10 @@
 "use client";
 
-import Card from "@/common/components/elements/Card";
-import SubContainer from "@/common/components/elements/SubContainer";
-import cn from "@/common/libs/clsxm";
-import { FeatureProps } from "@/common/types/feature";
 import Image from "next/image";
-import React, { useState } from "react";
+import { useState } from "react";
+
+import Card from "@/common/components/elements/Card";
+import { FeatureProps } from "@/common/types/feature";
 
 const FeatureCard = ({
   id,

@@ -1,6 +1,7 @@
-import { InfoItemProps } from "@/common/types/info";
-import { cn } from "@/lib/utils";
 import { FaArrowTrendUp as ArrowIcon } from "react-icons/fa6";
+
+import cn from "@/common/libs/clsxm";
+import { InfoItemProps } from "@/common/types/info";
 
 const InfoCard = ({
   title,

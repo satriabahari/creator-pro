@@ -1,12 +1,12 @@
 "use client";
 
-import useIsMobile from "@/hooks/useIsMobile";
 import MenuItemList from "./MenuItemList";
 import Profile from "./Profile";
 import ThemeSwitcher from "../../elements/ThemeSwitcher";
 import LoginButton from "../../elements/LoginButton";
-import SidebarButton from "../sidebar/SidebarButton";
 import Sidebar from "../sidebar/Sidebar";
+
+import useIsMobile from "@/hooks/useIsMobile";
 
 const Header = () => {
   const isMobile = useIsMobile();

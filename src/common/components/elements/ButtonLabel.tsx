@@ -1,5 +1,3 @@
-import React from "react";
-
 interface ButtonLabelProps {
   children: React.ReactNode;
   [propname: string]: React.ReactNode | string | undefined;
@@ -12,7 +10,7 @@ const ButtonLabel = ({ children, ...others }: ButtonLabelProps) => {
       {...others}
     >
       <button className="rounded-full bg-gradient-to-r from-neutral-200 to-neutral-100 px-4 py-1 dark:from-neutral-800 dark:to-neutral-900 dark:text-neutral-100">
-        <div className="flex items-center gap-1 lg:text-sm text-xs font-semibold">
+        <div className="flex items-center gap-1 text-xs font-semibold lg:text-sm">
           {children}
         </div>
       </button>

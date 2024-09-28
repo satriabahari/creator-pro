@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 
 const LatestPost = () => {
   return (
@@ -38,7 +37,7 @@ const LatestPost = () => {
             How to Stay Consistent with Quality Content
           </h3>
           <p
-            className="text-sm md:text-base text-neutral-500"
+            className="text-sm text-neutral-500 md:text-base"
             data-aos="fade-down"
             data-aos-delay="400"
             data-aos-anchor="#latestpost"
@@ -56,7 +55,7 @@ const LatestPost = () => {
         <div className="flex items-center gap-2">
           <Image
             src={"/images/satria-bahari.jpg"}
-            className="h-10 w-10 rounded-full  border-2 dark:border-neutral-700"
+            className="h-10 w-10 rounded-full border-2 dark:border-neutral-700"
             width={24}
             height={24}
             alt="Satria Bahari"

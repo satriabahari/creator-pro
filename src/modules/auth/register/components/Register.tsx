@@ -1,9 +1,10 @@
-import ThemeSwitcher from "@/common/components/elements/ThemeSwitcher";
 import Link from "next/link";
-import React from "react";
 import { FaArrowLeft } from "react-icons/fa";
+
 import RegisterInfo from "./RegisterInfo";
 import RegisterForm from "./RegisterForm";
+
+import ThemeSwitcher from "@/common/components/elements/ThemeSwitcher";
 
 const Register = () => {
   return (

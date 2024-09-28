@@ -1,5 +1,3 @@
-import React from "react";
-
 const TitleHero = () => {
   return (
     <div
@@ -19,8 +17,6 @@ const TitleHero = () => {
         data-aos="fade-down"
         data-aos-delay="200"
       >
-        {/* A platform designed to support content creators by providing tools to
-        grow, monetize, and showcase their creativity. */}
         CreatePro is an all-in-one platform designed for content creators, from
         beginners to pros, to build, manage, and monetize their work. Start your
         creative journey with industry-leading tools and features.

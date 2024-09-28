@@ -1,7 +1,8 @@
-import cn from "@/common/libs/clsxm";
-import { MenuItemProps } from "@/common/types/menu";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+
+import cn from "@/common/libs/clsxm";
+import { MenuItemProps } from "@/common/types/menu";
 
 interface MenuExpandItemProps extends MenuItemProps {
   setIsOpen?: (isOpen: boolean) => void;

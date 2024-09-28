@@ -1,8 +1,7 @@
+import cn from "@/common/libs/clsxm";
 import Tooltip from "@/common/components/elements/Tooltip";
 import SOSMED_ITEMS from "@/common/constants/sosmed";
-import cn from "@/common/libs/clsxm";
 import { SosmedItemProps } from "@/common/types/sosmed";
-import React from "react";
 
 const SosmedItem = ({ title, icon, className, ...others }: SosmedItemProps) => {
   return (
@@ -23,7 +22,7 @@ const SosmedItem = ({ title, icon, className, ...others }: SosmedItemProps) => {
 const SosmedList = () => {
   const filteredSosmeds = SOSMED_ITEMS.filter((item) => item.isShow);
   return (
-    <div className="flex items-center md:gap-3 gap-2">
+    <div className="flex items-center gap-2 md:gap-3">
       {filteredSosmeds.map((sosmed, index) => (
         <SosmedItem
           key={index}

@@ -1,4 +1,3 @@
-import React from "react";
 import InfoList from "./InfoList";
 import RevanueChart from "./RevenueChart";
 import EngagementChart from "./EngagementChart";
@@ -8,12 +7,11 @@ import SocialMediaStats from "./GrowthChart";
 const Dashboard = () => {
   return (
     <div
-      className="mt-20 grid gap-4 lg:overflow-hidden  lg:row-span-3 lg:mb-12 lg:mt-28 md:grid-cols-6 md:row-span-4 lg:grid-cols-9"
+      className="mt-20 grid gap-4 md:row-span-4 md:grid-cols-6 lg:row-span-3 lg:mb-12 lg:mt-28 lg:grid-cols-9 lg:overflow-hidden"
       id="dashboard"
     >
       <InfoList />
       <Profile />
-      {/* <TaskListCard /> */}
       <RevanueChart />
       <EngagementChart />
       <SocialMediaStats />

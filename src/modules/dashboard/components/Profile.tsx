@@ -1,9 +1,8 @@
+import Image from "next/image";
+
+import cn from "@/common/libs/clsxm";
 import Card from "@/common/components/elements/Card";
 import SOSMED_ITEMS from "@/common/constants/sosmed";
-import { cn } from "@/lib/utils";
-import Image from "next/image";
-import React, { useState } from "react";
-import { FaYoutube } from "react-icons/fa";
 
 const Profile = () => {
   const filteredSosmed = SOSMED_ITEMS.filter((item) => item.isShow);

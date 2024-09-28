@@ -1,19 +1,16 @@
-import React from "react";
-import { SosmedItemProps } from "../types/sosmed";
 import {
   FaInstagram as InstagramIcon,
   FaYoutube as YoutubeIcon,
   FaFacebook as FacebookIcon,
-  FaGithub as GithubIcon,
   FaTiktok as TiktokIcon,
-  FaWhatsapp as WhatsappIcon,
   FaTwitter as TwitterIcon,
-  FaTelegram as TelegramIcon,
 } from "react-icons/fa";
 import { SiGoogleadsense as GoogleAdsenseIcon } from "react-icons/si";
 import { IoLogoFigma as FigmaIcon } from "react-icons/io5";
 import { FaSlack as SlackIcon } from "react-icons/fa";
 import { SiGoogleanalytics as GoogleAnalyticsIcon } from "react-icons/si";
+
+import { SosmedItemProps } from "../types/sosmed";
 
 const iconSize = 20;
 
@@ -50,7 +47,8 @@ const SOSMED_ITEMS: SosmedItemProps[] = [
   {
     title: "Tiktok",
     icon: <TiktokIcon size={iconSize} />,
-    className: "bg-gradient-to-b from-neutral-200 to-neutral-400 text-neutral-900",
+    className:
+      "bg-gradient-to-b from-neutral-200 to-neutral-400 text-neutral-900",
     isShow: true,
   },
 

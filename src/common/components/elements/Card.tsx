@@ -1,5 +1,4 @@
 import cn from "@/common/libs/clsxm";
-import React from "react";
 
 interface CardProps extends React.HTMLProps<HTMLDivElement> {
   children: React.ReactNode;

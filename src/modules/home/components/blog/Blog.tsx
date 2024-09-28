@@ -1,8 +1,9 @@
-import React from "react";
+import Link from "next/link";
+
 import BlogList from "./BlogList";
+
 import SectionHeading from "@/common/components/elements/SectionHeading";
 import Button from "@/common/components/elements/Button";
-import Link from "next/link";
 import SubContainer from "@/common/components/elements/SubContainer";
 
 const Blog = () => {
@@ -15,7 +16,6 @@ const Blog = () => {
         title="Latest Insights"
         label="Creator Blog"
         description="Tips, trends, and stories from the world of content creation."
-        // description="Read articles, guides, and interviews with successful creators for inspiration."
         data-aos="fade-up"
         data-aos-anchor="#blog"
       />

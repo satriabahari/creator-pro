@@ -1,9 +1,10 @@
-import { MenuSidebarItemProps } from "../types/menuSidebar";
 import { FaTasks as TaskIcon } from "react-icons/fa";
 import { TbLayoutDashboardFilled as DashboardIcon } from "react-icons/tb";
 import { MdMonetizationOn as MonetizationIcon } from "react-icons/md";
 import { IoSettings as SettingsIcon } from "react-icons/io5";
 import { IoMdLogOut as LogoutIcon } from "react-icons/io";
+
+import { MenuSidebarItemProps } from "../types/menuSidebar";
 
 const iconSize = 18;
 

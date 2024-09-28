@@ -1,8 +1,9 @@
 "use client";
 
-import cn from "@/common/libs/clsxm";
 import { useTheme } from "next-themes";
 import { FaMoon as DarkIcon, FaSun as LightIcon } from "react-icons/fa";
+
+import cn from "@/common/libs/clsxm";
 
 interface ThemeSwitcherProps {
   className?: string;

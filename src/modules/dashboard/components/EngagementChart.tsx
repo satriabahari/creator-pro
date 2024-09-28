@@ -1,9 +1,9 @@
 "use client";
 
-import Card from "@/common/components/elements/Card";
-import React from "react";
-import { Doughnut, Pie } from "react-chartjs-2";
+import { Pie } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+
+import Card from "@/common/components/elements/Card";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 

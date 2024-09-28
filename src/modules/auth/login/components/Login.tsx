@@ -1,9 +1,10 @@
-import React from "react";
-import LoginForm from "./LoginForm";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
-import ThemeSwitcher from "@/common/components/elements/ThemeSwitcher";
+
+import LoginForm from "./LoginForm";
 import LoginInfo from "./LoginInfo";
+
+import ThemeSwitcher from "@/common/components/elements/ThemeSwitcher";
 
 const Login = () => {
   return (
@@ -28,7 +29,7 @@ const Login = () => {
         data-aos-anchor="#login"
       />
       <LoginForm />
-      <LoginInfo/>
+      <LoginInfo />
     </section>
   );
 };

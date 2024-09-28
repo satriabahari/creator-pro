@@ -1,9 +1,9 @@
-import Container from "@/common/components/elements/Container";
 import Home from "@/modules/home";
+import Container from "@/common/components/elements/Container";
 
 const HomePage = () => {
   return (
-    <Container backgroundGradient={true} className="pt-36 min-h-screen ">
+    <Container backgroundGradient={true} className="min-h-screen pt-36">
       <Home />
     </Container>
   );

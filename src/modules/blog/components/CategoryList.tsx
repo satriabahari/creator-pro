@@ -1,7 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
+
 import CategoryItem from "./CategoryItem";
+
 import CATEGORY_BLOG_ITEMS from "@/common/constants/categoryBlog";
 
 const CategoryList = () => {
@@ -22,8 +24,6 @@ const CategoryList = () => {
           index={index}
           bgColor={category.bgColor}
           handleClick={handleClick}
-          // data-aos="fade-down"
-          // data-aos-delay={index * 100 + 200}
         >
           {category.title}
         </CategoryItem>

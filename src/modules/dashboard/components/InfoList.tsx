@@ -1,6 +1,6 @@
-import INFO_ITEMS from "@/common/constants/info";
-import React from "react";
 import InfoCard from "./InfoCard";
+
+import INFO_ITEMS from "@/common/constants/info";
 
 const InfoList = () => {
   const filteredItems = INFO_ITEMS.filter((item) => item.isShow);

@@ -1,10 +1,11 @@
 "use client";
 
-import { BlogProps } from "@/common/types/blog";
 import Image from "next/image";
-import { Stringifier } from "postcss";
-import React, { useState } from "react";
+import { useState } from "react";
+
 import Card from "./Card";
+
+import { BlogProps } from "@/common/types/blog";
 
 const BlogCard = ({
   title,
@@ -39,7 +40,7 @@ const BlogCard = ({
           width={300}
           height={200}
           alt={title}
-          className="md:h-[150px] md:w-[300px] h-[350px] w-full  rounded-lg"
+          className="h-[350px] w-full rounded-lg md:h-[150px] md:w-[300px]"
         />
         <div className="px-2 py-4">
           <div className="space-y-4 lg:space-y-6">

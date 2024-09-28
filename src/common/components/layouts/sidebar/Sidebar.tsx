@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+
 import SidebarButton from "./SidebarButton";
 import MenuItemList from "../header/MenuItemList";
 import LoginButton from "../../elements/LoginButton";
 import ThemeSwitcher from "../../elements/ThemeSwitcher";
-import { AnimatePresence, motion } from "framer-motion";
 
 const Sidebar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);

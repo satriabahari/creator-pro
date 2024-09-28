@@ -1,11 +1,11 @@
-import FEATURE_ITEMS from "@/common/constants/features";
-import React from "react";
 import FeatureSection from "./FeatureCard";
+
+import FEATURE_ITEMS from "@/common/constants/features";
 
 const FeaturesList = () => {
   const filteredFeatures = FEATURE_ITEMS.filter((feature) => feature.isShow);
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-4 md:gap-4 gap-8 lg:grid-cols-6 px-4">
+    <div className="grid grid-cols-1 gap-8 px-4 md:grid-cols-2 md:gap-4 lg:grid-cols-6 lg:gap-4">
       {filteredFeatures.map((feature, index) => (
         <FeatureSection
           key={index}

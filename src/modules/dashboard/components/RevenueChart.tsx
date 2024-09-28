@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import {
   Chart as ChartJS,
   RadialLinearScale,
@@ -9,6 +8,7 @@ import {
   Legend,
 } from "chart.js";
 import { PolarArea } from "react-chartjs-2";
+
 import Card from "@/common/components/elements/Card";
 
 ChartJS.register(RadialLinearScale, ArcElement, Tooltip, Legend);
@@ -50,7 +50,7 @@ export const data = {
 const RevenueChart = () => {
   return (
     <Card
-      className="col-span-1 flex items-center justify-center md:col-span-3 md:order-5"
+      className="col-span-1 flex items-center justify-center md:order-5 md:col-span-3"
       data-aos="fade-down"
       data-aos-delay="500"
       data-aos-anchor="#dashboard"

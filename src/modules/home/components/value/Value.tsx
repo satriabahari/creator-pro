@@ -1,7 +1,7 @@
-import SectionHeading from "@/common/components/elements/SectionHeading";
 import ValueList from "./ValueList";
+
+import SectionHeading from "@/common/components/elements/SectionHeading";
 import SubContainer from "@/common/components/elements/SubContainer";
-import ButtonLabel from "@/common/components/elements/ButtonLabel";
 
 const Value = () => {
   return (

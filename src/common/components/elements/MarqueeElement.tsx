@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import { useTheme } from "next-themes";
 import Marquee from "react-fast-marquee";
+import { useTheme } from "next-themes";
 
 interface MarqueeElementProps {
   children: React.ReactNode;

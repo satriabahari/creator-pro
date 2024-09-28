@@ -1,9 +1,10 @@
-import Button from "@/common/components/elements/Button";
-import React from "react";
 import {
   IoIosArrowBack as PreviousIcon,
   IoIosArrowForward as NextIcon,
 } from "react-icons/io";
+
+import Button from "@/common/components/elements/Button";
+
 const Pagination = () => {
   return (
     <div id="pagination" className="flex items-center justify-between">

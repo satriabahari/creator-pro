@@ -1,9 +1,10 @@
 "use client";
 
-import { FaqProps } from "@/common/types/faq";
+import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import React, { useState } from "react";
 import { IoIosArrowDown as ArrowIcon } from "react-icons/io";
+
+import { FaqProps } from "@/common/types/faq";
 
 const FaqCard = ({ question, answer, ...others }: FaqProps) => {
   const [isShow, setIsShow] = useState(false);

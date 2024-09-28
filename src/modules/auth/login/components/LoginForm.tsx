@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import { SiContentstack as LogoIcon } from "react-icons/si";
 import { FaGoogle } from "react-icons/fa";
 

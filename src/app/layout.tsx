@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Plus_Jakarta_Sans } from "next/font/google";
-import "./globals.css";
-import Layouts from "@/common/components/layouts";
-// import { ThemeProvider } from "next-themes";
 import NextTopLoader from "nextjs-toploader";
+import { Plus_Jakarta_Sans } from "next/font/google";
+import "./globals.css";
+
+import Layouts from "@/common/components/layouts";
 import ThemeProviderContext from "@/stores/theme";
 
 const inter = Plus_Jakarta_Sans({ subsets: ["latin"] });

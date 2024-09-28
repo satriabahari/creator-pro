@@ -1,6 +1,6 @@
-import { TestimonialProps } from "@/common/types/testimonial";
 import Image from "next/image";
-import React from "react";
+
+import { TestimonialProps } from "@/common/types/testimonial";
 
 const TestimonialCard = ({
   image,
@@ -9,8 +9,8 @@ const TestimonialCard = ({
   message,
 }: TestimonialProps) => {
   return (
-    <div className="mx-4 w-96 rounded-2xl bg-gradient-to-br p-0.5 from-purple-500 via-pink-500 to-yellow-500">
-      <div className="space-y-5 rounded-2xl from-neutral-200 to-neutral-100 bg-gradient-to-b p-6 dark:from-neutral-800 dark:to-neutral-900">
+    <div className="mx-4 w-96 rounded-2xl bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-500 p-0.5">
+      <div className="space-y-5 rounded-2xl bg-gradient-to-b from-neutral-200 to-neutral-100 p-6 dark:from-neutral-800 dark:to-neutral-900">
         <div className="flex items-center gap-2">
           <Image
             src={image}

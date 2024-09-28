@@ -1,10 +1,12 @@
-import React from "react";
+import { BsStars as StarsIcon } from "react-icons/bs";
+
 import TitleHero from "./TitleHero";
 import SosmedList from "./SosmedList";
 import ImageHero from "./ImageHero";
+
 import SubContainer from "@/common/components/elements/SubContainer";
 import ButtonLabel from "@/common/components/elements/ButtonLabel";
-import { BsStars as StarsIcon } from "react-icons/bs";
+
 const Hero = () => {
   return (
     <SubContainer
@@ -24,7 +26,7 @@ const Hero = () => {
       <TitleHero />
       <SosmedList />
       <button
-        className="bg-gradient-color rounded-full px-4 py-2 text-xs md:text-sm font-semibold text-neutral-200 transition duration-300 hover:scale-105 active:scale-90 lg:text-base"
+        className="bg-gradient-color rounded-full px-4 py-2 text-xs font-semibold text-neutral-200 transition duration-300 hover:scale-105 active:scale-90 md:text-sm lg:text-base"
         data-aos="fade-up"
         data-aos-delay="800"
         data-aos-anchor="#hero"
@@ -32,7 +34,10 @@ const Hero = () => {
         Get Started
       </button>
 
-      <div id="hero-image" className="mt-20 flex w-full items-center justify-center">
+      <div
+        id="hero-image"
+        className="mt-20 flex w-full items-center justify-center"
+      >
         <ImageHero />
       </div>
     </SubContainer>

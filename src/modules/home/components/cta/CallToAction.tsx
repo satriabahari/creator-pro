@@ -1,6 +1,6 @@
-import SubContainer from "@/common/components/elements/SubContainer";
 import Image from "next/image";
-import React from "react";
+
+import SubContainer from "@/common/components/elements/SubContainer";
 
 const CallToAction = () => {
   return (
@@ -8,10 +8,6 @@ const CallToAction = () => {
       className="relative flex flex-col items-center justify-center gap-4 overflow-hidden rounded-xl p-8 text-center"
       id="cta"
     >
-      {/* <SubContainer
-      className="flex relative flex-col items-center justify-center gap-4 overflow-hidden rounded-xl bg-gradient-to-b from-neutral-200 to-neutral-100 p-8 text-center dark:from-neutral-800 dark:to-neutral-900"
-      id="cta"
-    > */}
       <div className="absolute inset-0 -z-10 h-full w-full bg-neutral-300 bg-[radial-gradient(#606060,transparent_1px)] [background-size:16px_16px] dark:bg-[#222222]"></div>
       <div
         className="flex flex-col text-2xl font-semibold text-neutral-700 dark:text-neutral-300 lg:text-3xl"

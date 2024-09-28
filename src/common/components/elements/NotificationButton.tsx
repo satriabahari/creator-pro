@@ -1,6 +1,6 @@
-import cn from "@/common/libs/clsxm";
-import React from "react";
 import { IoNotifications as NotificationIcon } from "react-icons/io5";
+
+import cn from "@/common/libs/clsxm";
 
 interface NotificationButtonProps {
   className?: string;

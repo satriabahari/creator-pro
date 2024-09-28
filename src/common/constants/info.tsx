@@ -1,6 +1,7 @@
 import { FaEye as ViewIcon } from "react-icons/fa";
 import { GiProfit as EarningIcon } from "react-icons/gi";
 import { AiFillLike as LikeIcon } from "react-icons/ai";
+
 import { InfoItemProps } from "../types/info";
 
 const iconSize = 16;

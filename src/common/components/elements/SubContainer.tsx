@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/lib/utils";
+import cn from "@/common/libs/clsxm";
 
 interface SubContainerProps {
   children: React.ReactNode;

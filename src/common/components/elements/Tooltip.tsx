@@ -1,8 +1,7 @@
 "use client";
 
-import React from "react";
-import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 interface TooltipProps {
   children: React.ReactNode;

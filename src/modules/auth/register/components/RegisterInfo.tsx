@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 
 const RegisterInfo = () => {
   return (
@@ -31,7 +30,7 @@ const RegisterInfo = () => {
           width={200}
           height={200}
           alt="login"
-          className="absolute -left-12 bottom-3 hidden translate-y-1/2 border-2 rounded-md border-neutral-500 md:block"
+          className="absolute -left-12 bottom-3 hidden translate-y-1/2 rounded-md border-2 border-neutral-500 md:block"
           data-aos="fade-right"
           data-aos-delay="600"
           data-aos-anchor="#login"

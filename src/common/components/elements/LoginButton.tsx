@@ -1,6 +1,6 @@
-import React from "react";
-import Button from "./Button";
 import Link from "next/link";
+
+import Button from "./Button";
 
 const LoginButton = () => {
   return (

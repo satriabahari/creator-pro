@@ -1,7 +1,5 @@
 "use client";
 
-import Card from "@/common/components/elements/Card";
-import React from "react";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -13,6 +11,8 @@ import {
   Legend,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
+
+import Card from "@/common/components/elements/Card";
 
 ChartJS.register(
   CategoryScale,
@@ -103,7 +103,7 @@ interface SocialMediaStatsProps {
 const SocialMediaStats = ({ colspan }: SocialMediaStatsProps) => {
   return (
     <Card
-      className="col-span-1 lg:col-span-6 md:col-span-6 md:order-7 flex items-center justify-center"
+      className="col-span-1 flex items-center justify-center md:order-7 md:col-span-6 lg:col-span-6"
       data-aos="fade-up"
       data-aos-delay="700"
       data-aos-anchor="#dashboard"
