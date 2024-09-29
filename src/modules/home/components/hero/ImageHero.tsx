@@ -27,7 +27,7 @@ const ImageHero = () => {
         data-aos="fade-down"
         data-aos-delay="600"
         data-aos-anchor="#hero-image"
-        className="absolute left-0  md:bottom-5 bottom-0 lg:bottom-7"
+        className="absolute bottom-0 left-0 hidden md:bottom-5 md:block lg:bottom-7"
       />
       <Image
         src="/images/ipad-responsive.png"
@@ -38,7 +38,7 @@ const ImageHero = () => {
         data-aos="fade-left"
         data-aos-delay="600"
         data-aos-anchor="#hero-image"
-        className="absolute right-0  md:bottom-5 bottom-0 lg:bottom-7 hidden md:block"
+        className="absolute bottom-0 right-0 hidden md:bottom-5 md:block lg:bottom-7"
       />
     </div>
   );

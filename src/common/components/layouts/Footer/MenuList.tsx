@@ -19,7 +19,7 @@ const MenuList = () => {
             </h2>
           </div>
           <p className="text-sm text-neutral-500 lg:text-base">
-            AI for content creators
+            Empowering creators, amplifying impact
           </p>
           <hr className="border-t border-neutral-700 dark:border-neutral-300" />
         </div>

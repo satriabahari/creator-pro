@@ -5,7 +5,7 @@ import { SiContentstack as LogoIcon } from "react-icons/si";
 
 const RegisterForm = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-4 px-16 md:px-32">
+    <div className="flex min-h-screen flex-col items-center justify-center gap-4 px-8 md:px-32">
       <div
         className="w-fit rounded-lg bg-gradient-to-br from-purple-400 via-pink-400 to-yellow-400 p-1.5"
         data-aos="zoom-in"

@@ -16,7 +16,11 @@ const CategoryList = () => {
   };
 
   return (
-    <div className="flex gap-4 overflow-x-auto">
+    <div className="flex gap-4 overflow-x-auto" 
+    data-aos="fade-right"
+    data-aos-delay="200"
+    data-aos-anchor="#blogList"
+    >
       {filteredCategories.map((category, index) => (
         <CategoryItem
           isActive={activeIndex === index}

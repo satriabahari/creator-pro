@@ -3,9 +3,9 @@ import { FeatureProps } from "../types/feature";
 const FEATURE_ITEMS: FeatureProps[] = [
   {
     id: 1,
-    title: "In-Depth Audience Insights",
+    title: "Flawless Responsiveness",
     description:
-      "Understand your audience like never before with real-time analytics.",
+      "Your content, perfectly optimized for any screen size—whether it's desktop, tablet, or mobile.",
     image: "/images/mobile-responsive.png",
     aosType: "fade-right",
     colSpan: "lg:col-span-3",
@@ -14,8 +14,9 @@ const FEATURE_ITEMS: FeatureProps[] = [
   },
   {
     id: 2,
-    title: "Integrated Social Media Tools",
-    description: "Share content across multiple platforms in just one click.",
+    title: "Effortless Integration",
+    description:
+      "Connect with your favorite tools and platforms seamlessly, making content management smoother than ever.",
     image: "/images/integrations.png",
     aosType: "fade-left",
     colSpan: "lg:col-span-3",
@@ -24,9 +25,9 @@ const FEATURE_ITEMS: FeatureProps[] = [
   },
   {
     id: 3,
-    title: "Multimedia Content Support",
+    title: "Revenue at a Glance",
     description:
-      "Upload and showcase videos, podcasts, and written content seamlessly.",
+      "Track and analyze your earnings across various streams with a comprehensive revenue overview.",
     image: "/images/revanue-chart.png",
     aosType: "fade-up",
     aosDelay: 1 * 100 + 300,
@@ -37,9 +38,9 @@ const FEATURE_ITEMS: FeatureProps[] = [
   },
   {
     id: 4,
-    title: "Community Forum",
+    title: "Dynamic Growth Tracking",
     description:
-      "Join discussions, ask questions, and get support from fellow creators.",
+      " Watch your audience and content reach expand over time with detailed growth insights.",
     image: "/images/growth-chart.png",
     aosType: "fade-up",
     aosDelay: 2 * 100 + 300,
@@ -50,9 +51,9 @@ const FEATURE_ITEMS: FeatureProps[] = [
   },
   {
     id: 5,
-    title: "Community Forum",
+    title: "Engagement Insights",
     description:
-      "Join discussions, ask questions, and get support from fellow creators.",
+      "Measure your audience's interaction with detailed charts that show engagement trends and performance.",
     image: "/images/engagement-chart.png",
     aosType: "fade-up",
     aosDelay: 3 * 100 + 300,
