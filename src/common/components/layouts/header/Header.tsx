@@ -1,15 +1,10 @@
-"use client";
-
 import MenuItemList from "./MenuItemList";
 import Profile from "./Profile";
 import ThemeSwitcher from "../../elements/ThemeSwitcher";
 import LoginButton from "../../elements/LoginButton";
 import Sidebar from "../sidebar/Sidebar";
 
-import useIsMobile from "@/hooks/useIsMobile";
-
 const Header = () => {
-  const isMobile = useIsMobile();
   return (
     <header
       className="fixed z-10 w-full border-b border-neutral-300 bg-white/50 backdrop-blur-xl dark:border-neutral-700 dark:bg-[#121212]/50"
